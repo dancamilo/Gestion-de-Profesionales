@@ -19,7 +19,7 @@ class CreateCoursesTable extends Migration
             $table->date('duracion');
             $table->date('asistentes');
             $table->text('valor');
-            $table->foreignId('id_profesionals')->constrained('id_profesionals');
+            $table->foreignId('id_profesionals')->constrained('profesionals');
             $table->timestamps();
         });
     }

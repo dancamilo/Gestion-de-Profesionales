@@ -15,8 +15,8 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_typedocs')->constrained('id_typedocs');
-            $table->foreignId('id_profesionals')->constrained('id_profesionals');
+            $table->foreignId('id_typedocs')->constrained('type_docs');
+            $table->foreignId('id_profesionals')->constrained('profesionals');
 
             $table->timestamps();
         });

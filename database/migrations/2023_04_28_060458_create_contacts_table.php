@@ -19,7 +19,7 @@ class CreateContactsTable extends Migration
             $table->string('numero');
             $table->string('email');
             $table->text('area');
-            $table->foreignId('id_companies')->constrained('id_companies');
+            $table->foreignId('id_companies')->constrained('companies');
             $table->timestamps();
         });
     }

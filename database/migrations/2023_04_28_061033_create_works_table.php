@@ -16,12 +16,12 @@ class CreateWorksTable extends Migration
         Schema::create('works', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->date('fecha.in');
-            $table->date('fecha.fi');
+            $table->date('fecha_in');
+            $table->date('fecha_fi');
             $table->text('descripcion');
-            $table->foreignId('id_profesionals')->constrained('id_profesionals');
-            $table->foreignId('id_companies')->constrained('id_companies');
-            $table->foreignId('id_courses')->constrained('id_courses');
+            $table->foreignId('id_profesionals')->constrained('profesionals');
+            $table->foreignId('id_companies')->constrained('companies');
+            $table->foreignId('id_courses')->constrained('courses');
             $table->timestamps();
 
         });

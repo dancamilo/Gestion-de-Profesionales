@@ -16,9 +16,9 @@ class CreateCertificationsTable extends Migration
         Schema::create('certifications', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->date('fecha.ob');
+            $table->date('fecha_ob');
             $table->text('descripcion');
-            $table->foreignId('id_courses')->constrained('id_courses');
+            $table->foreignId('id_courses')->constrained('courses');
             $table->timestamps();
         });
     }
