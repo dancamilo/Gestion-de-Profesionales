@@ -59,9 +59,9 @@
         </div>
     </header>
     <body class="antialiased">
-        <div class="container-fluid w-10 items-center justify-center">
-            <div class="row flex-nowrap">
-                <div class="col-auto col-md-2 min-vh-100">
+        <div class="container-fluid items-center justify-center">
+            <div class="row ">
+                <div class="col-md-2">
                     <div class="p">
                         <a class="d-flex justify-center ml-10 text-gray-900 " href="#">
                             <i class="fa-solid fa-bars"></i><span class="fs-4 d-sm-inline"></span>
@@ -104,9 +104,10 @@
                         </ul>
                     </div>
                 </div>
+                @yield('content')
             </div>
         </div> 
-        @yield('content')
+        
         <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>  <!-- Íconos -->
     <footer class="bottom w-all">
         <div class="container-fluid bg-rojo py-2 px-6">
