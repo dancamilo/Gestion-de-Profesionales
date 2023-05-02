@@ -11,9 +11,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/app.css">
-
         <!-- Styles -->
         <style>
             /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -21,7 +18,7 @@
             body{margin:0; padding:0;box-sizing:border-box}
             ul{text-decoration: none} li{list-style: none}
             a{background-color:transparent;text-decoration: none}[hidden]{display:none}
-            .text-white{color:white} .bottom{position: absolute;bottom:0}
+            .text-white{color:white} .bottom{position: absolute;bottom:0} .right{position: relative;left:80vw}
             html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}
             *,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}
             a{text-decoration:none}.pb{padding-bottom: 2rem}
@@ -38,8 +35,8 @@
             .text-lg{font-size:1.125rem}.text-m{font-size: 2rem}.w-all{width: 100%}
             .leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.ml-3{margin-left: .8rem}
             .mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}
-            .mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}
-            .overflow-hidden{overflow:hidden}.py-2{padding-top:.5rem;padding-bottom:.5rem}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:2.5rem;padding-right:2.5rem}
+            .mt-8{margin-top:2rem}.ml-10{margin-left: 2.5rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}
+            .overflow-hidden{overflow:hidden}.py-1{padding-top:.3rem;padding-bottom:.3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.p-6{padding:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:2.5rem;padding-right:2.5rem}
             .pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}
             .text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}
             .text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}
@@ -56,20 +53,20 @@
             }
         </style>
     </head>
-    <header>
+    <header class="pb">
         <div class="container-fluid bg-rojo py-2 px-6">
             <h1 class="text-white text-m">Gestor de profesionales</h1>
         </div>
     </header>
     <body class="antialiased">
-        <div class="container-fluid w-10 items-center justify-center h-auto">
+        <div class="container-fluid w-10 items-center justify-center">
             <div class="row flex-nowrap">
                 <div class="col-auto col-md-2 min-vh-100">
-                    <div class="p-6">
-                        <a class="d-flex justify-center  text-gray-900" href="#">
+                    <div class="p">
+                        <a class="d-flex justify-center ml-10 text-gray-900 " href="#">
                             <i class="fa-solid fa-bars"></i><span class="fs-4 d-sm-inline"></span>
                         </a>
-                        <ul class="nav nav-pills flex-column mt-4">
+                        <ul class="nav nav-pills flex-column">
                             <li class="nav-item pb">
                                 <a href="#" class="nav-link text-gray-900">
                                     <i class="fa-solid fa-house"></i><span class="fs-4 ml-2 d-sm-inline"></span>
@@ -90,7 +87,7 @@
                                 </a>
                             </li>
                             <li class="nav-item pb">
-                                <a href="#" class="nav-link text-gray-900 mr-2">
+                                <a href="#" class="nav-link text-gray-900">
                                     <i class="fa-solid fa-city"></i><span class="fs-4 d-sm-inline"></span>
                                 </a>
                             </li>
@@ -113,9 +110,9 @@
     </body>
     <footer class="bottom w-all">
         <div class="container-fluid bg-rojo py-2 px-6">
-            <img src="{{asset('img/Logo1.png')}}" alt="Logo UE">
+            <img class="h-16 right" src="{{asset('img/Logo1.png')}}" alt="Logo UE">
         </div>
-        <div class="container-fluid bg-gray-100 text-center py-2 px-6">
+        <div class="container-fluid bg-gray-100 text-center py-1 px-6">
             <h1 class="text-white text-sm">Derechos de autor 2023 ©</h1>
         </div>
     </footer>
