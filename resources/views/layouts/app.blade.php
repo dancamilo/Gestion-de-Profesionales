@@ -149,6 +149,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Iconos font awesome -->
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
