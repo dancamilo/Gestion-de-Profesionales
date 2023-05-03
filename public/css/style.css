@@ -71,7 +71,6 @@
     width: 150px;
     height: 100vh;
     overflow-y: auto;
-    background: var(--secondary);
     transition: 0.5s;
     z-index: 999;
 }
@@ -296,7 +295,7 @@
     /* margin-top: 500px; */
  }
 .logo{
-    background-image: url("https://www.uniempresarial.edu.co/wp-content/uploads/2020/04/Logo_UE_011222.png");
+    background-image: url("//public/img/logo.png");
     height: 67px;
     width: 300px;
     object-fit: cover;
