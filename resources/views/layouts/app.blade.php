@@ -89,7 +89,7 @@
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars lineas"></i>
                 </a>
                 <a href="#" class="logo"></a>
                 <a href="" class="gestor">GESTOR DE PROFESIONALES</a>
