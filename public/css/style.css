@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EB1616;
+    --primary:#721422;
     --secondary: #191C24;
     --light: #6C7293;
-    --dark: #000000;
+    --dark: white;
 }
 
 .back-to-top {
@@ -124,6 +124,7 @@
     border-left: 3px solid var(--secondary);
     border-radius: 0 30px 30px 0;
     outline: none;
+    height: 130px;
 }
 
 .sidebar .navbar .navbar-nav .nav-link:hover,
@@ -177,7 +178,7 @@
 .content .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 12px 0;
-    color: var(--light);
+    color: white;
     outline: none;
 }
 
@@ -306,7 +307,21 @@
     color: white;
 }
 
-
 .img-footer{
     width: 30vw;
+}
+.footer {
+    background-image: url("https://www.uniempresarial.edu.co/wp-content/uploads/2020/04/LogoUE_Blanco_2022-1.png");
+    height: 300px;
+    width: 650px;
+    margin-top: 25px;
+}
+.rounded {
+    height: 100px;
+}
+.lineas{
+    color: #721422;
+}
+.panel{
+    background-color: white;
 }
