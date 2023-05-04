@@ -68,7 +68,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 150px;
+    width: 170px;
     height: 100vh;
     overflow-y: auto;
     transition: 0.5s;
@@ -305,12 +305,8 @@
     margin-left: 15px;
     color: white;
 }
-.footer {
-    background-image: url("https://www.uniempresarial.edu.co/wp-content/uploads/2020/04/LogoUE_Blanco_2022-1.png");
-    height: 300px;
-    width: 650px;
-    margin-top: 25px;
-}
-.rounded {
-    height: 100px;
+
+
+.img-footer{
+    width: 30vw;
 }
