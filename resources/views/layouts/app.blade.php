@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <title>Página principal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -54,27 +54,12 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-graduation-cap"></i></a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">vacio</a>
-                            <a href="typography.html" class="dropdown-item"></a>
-                            <a href="element.html" class="dropdown-item"></a>
-                        </div>
-                    </div>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
                     <a href="widget.html" class="nav-item nav-link"><i class="fa-solid fa-user-group"></i></a>
                     <a href="form.html" class="nav-item nav-link"><i class="fa-solid fa-user-shield"></i></a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa-solid fa-building"></i><a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa-solid fa-file-arrow-up"></i></a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">vacio</a>
-                            <a href="signup.html" class="dropdown-item"></a>
-                            <a href="404.html" class="dropdown-item"></a>
-                            <a href="blank.html" class="dropdown-item"></a>
-                        </div>
-                    </div>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </nav>
         </div>
@@ -92,7 +77,7 @@
                     <i class="fa fa-bars lineas"></i>
                 </a>
                 <a href="#" class="logo"></a>
-                <a href="" class="gestor">GESTOR DE PROFESIONALES</a>
+                <a href="" class="gestor">Gestor de profesionales</a>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -110,7 +95,7 @@
 
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4">
+            <div class="container-fluid pt-4 bottom">
                 <div class="bg-secondary rounded-top p-2 rounded">
                     <div class="row">
                         <div class="col-12 col-sm-6 footer">
