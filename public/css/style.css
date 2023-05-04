@@ -91,7 +91,7 @@
     }
 
     .content {
-        width: calc(100% - 250px);
+        width: calc(100%);
     }
 
     .content.open {
@@ -124,7 +124,7 @@
     border-left: 3px solid var(--secondary);
     border-radius: 0 30px 30px 0;
     outline: none;
-    height: 130px;
+    height: 100px;
 }
 
 .sidebar .navbar .navbar-nav .nav-link:hover,

@@ -84,7 +84,7 @@
         <!-- Content Start -->
         <div class="content">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top py-0 px-4">
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
@@ -99,9 +99,7 @@
                             <span class="d-none d-lg-inline-flex">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
+                            <a href="#" class="dropdown-item">Cerrar sesión</a>
                         </div>
                     </div>
                 </div>
@@ -112,8 +110,8 @@
 
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary rounded-top p-2  rounded">
+            <div class="container-fluid pt-4">
+                <div class="bg-secondary rounded-top p-2 rounded">
                     <div class="row">
                         <div class="col-12 col-sm-6 footer">
                             <img class="rounded img-footer" src="{{asset('img/Logo1.png')}}" alt="">
