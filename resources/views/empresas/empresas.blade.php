@@ -2,23 +2,24 @@
 @section('content')
 
 <div class="container">
+    <div class="row mt-5">
+        <h2>Empresas</h2><hr>
+
+            <div class="col-sm-2 text-dark">
+                <p>Ordernar por: </p>
+            </div>
+            <div class="col-sm-4">
+                <select class="form-select bg-white">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+        </div>
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <div class="mt-5">
-                <h2>Empresas</h2><hr>
-                <div class="row">
-                    <div class="col-sm-2 text-dark">
-                        <p>Ordernar por: </p>
-                    </div>
-                    <div class="col-sm-7">
-                        <select class="form-select bg-white">
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                            <option></option>
-                        </select>
-                    </div>
-                </div>
             <div class="card text-white bg-light mt-5">
                 <div class="card-body">
                     <div class="row">
