@@ -95,7 +95,7 @@
 
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 fixed-bottom">
+            <div class="container-fluid pt-4">
                 <div class="bg-secondary rounded-top p-2 rounded">
                     <div class="row">
                         <div class="col-12 col-sm-6 footer">
