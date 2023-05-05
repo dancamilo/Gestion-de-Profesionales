@@ -28,3 +28,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profesionales', function () {return view('profesionales.profesionales');});
+Route::get('/empresas', function () {return view('empresas.empresas');});
