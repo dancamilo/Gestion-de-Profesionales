@@ -132,6 +132,25 @@
                             </div>
 
                             <center><h3 class="text-white">Fechas: </h3></center>
+                            <div class="row py-3">
+                                <div class="col-md-6 mx-auto">
+                                  <div class="row">
+                                    <div class="col-lg-6 mx-auto col-md-8 col-sm-5">
+                                      <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                        <input class="form-control datepicker" placeholder="Please select date" type="text" >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                                <!-- initialization script -->
+                              <script>
+                                if (document.querySelector(".datepicker")) {
+                                   flatpickr(".datepicker", {});
+                                }
+                              </script>
 
 
                         </div>
