@@ -319,26 +319,3 @@
     display:block;
     width:50%;
 }
-.card-body{
-    
-}
-
-#six-images .col-md-4 {
-  padding: 0 15px;
-}
-
-#six-images .rounded {
-  border: 1px solid #ddd;
-}
-
-#six-images .img-footer {
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 992px) {
-  #six-images .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-}
