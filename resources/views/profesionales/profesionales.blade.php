@@ -1,16 +1,16 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container">
+<div class="container mx-5">
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <div class="mt-5">
                 <h2>Profesionales</h2><hr>
                 <div class="row">
-                    <div class="col-sm-2 text-dark">
-                        <p>Ordernar por: </p>
+                    <div class="col-sm-2 text-dark p-0">
+                        <p class="">Ordernar por: </p>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-sm-7 p-0">
                         <select class="form-select bg-white">
                             <option></option>
                             <option></option>

@@ -6,6 +6,10 @@
     --dark: white;
 }
 
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
