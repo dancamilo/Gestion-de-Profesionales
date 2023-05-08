@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Página principal</title>
+    <title>informacion personal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -91,11 +91,112 @@
             </nav>
             <!-- Navbar End -->
 
+            <!-- columnas -->
+            <div class="container text-center">
+                 <div class="row align-items-start">
+                   <div class="col">
+                     <div class="persona">
+                         <div class="imagen"><img src="ruta-de-la-imagen.jpg"></div>
+                           <div class="info">
+                             <h2>Nombre Apellido</h2>
+                                <p class="descripcion">Breve descripción</p>
+                          <div class="contacto">
+                          <div class="telefono"><i class="fas fa-phone"></i> Telefono 1</div>
+                          <div class="telefono"><i class="fas fa-phone"></i> Telefono 2</div>
+                          <div class="correo"><i class="fas fa-envelope"></i> Correo 1</div>
+                          <div class="correo"><i class="fas fa-envelope"></i> Correo 2</div>
+                        </div>
+                      </div>
+                    </div>
+
+                   </div>
+                   <div class="recuadro">
+                     <h3>Información académica</h3>
+                        <ul>
+                         <li>Bachiller</li>
+                         <li>Título universitario</li>
+                       </ul>
+                         <button>Añadir</button>
+                   </div>
+                   <div class="recuadro">
+                      <h3>Experiencia laboral</h3>
+                       <ul>
+                      <li>Profesor - Universidad A - 2010-2015</li>
+                      <li>Tutor - Universidad B - 2015-2020</li>
+                       </ul>
+                        <button>Añadir</button>
+                   </div>
+                   <div class="recuadro">
+                       <h3>Documentos requeridos</h3>
+                    <form>
+                      <input type="file">
+                      <button type="submit">Añadir</button>
+                   </form>
+                 </div>
+                </div>
+
+                   </div>
+                   <div class="col">
+                   <div class="columna">
+  <div class="recuadro">
+    <h3>Rol a desempeñar</h3>
+    <p>Área especializada:</p>
+    <ul>
+      <li>Curso 1</li>
+      <li>Curso 2</li>
+    </ul>
+    <button>Añadir</button>
+  </div>
+  <div class="recuadro">
+    <h3>Horario</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Hora de inicio</th>
+          <th>Hora de fin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td><input type="time"></td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td><input type="time"></td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td><input type="time"></td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td><input type="time"></td>
+          <td><input type="time"></td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td><input type="time"></td>
+          <td><input type="time"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button>Añadir</button>
+  </div>
+</div>
+
+                   </div>
+                 </div>
+           </div>
+
             @yield('content')
 
-
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 fixed-bottom">
+            <div class="container-fluid pt-4">
                 <div class="bg-secondary rounded-top p-2 rounded">
                     <div class="row">
                         <div class="col-12 col-sm-6 footer">
@@ -110,34 +211,6 @@
         <!-- Content End -->
 
         @section('content')
-
-<!-- Aquí se pueden agregar los elementos que se quieran mostrar en la sección del contenido de la página -->
-
-<!-- Sección para mostrar las seis imágenes -->
-<section id="six-images">
-  <div class="row">
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imgcursos.png')}}" alt="">
-    </div>
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imgprofesional.png')}}" alt="">
-    </div>
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imgaccesousuarios.png')}}" alt="">
-    </div>
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imgempresas.png')}}" alt="">
-    </div>
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imgcertificados.png')}}" alt="">
-    </div>
-    <div class="col-md-4 col-12 mb-4">
-       <img class="rounded img-footer" src="{{asset('img/Imghistorial.png')}}" alt="">
-    </div>
-  </div>
-</section>
-
-@endsection
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

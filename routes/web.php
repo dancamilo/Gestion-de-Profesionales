@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', function () {return view('users.users');});
+Route::get('/cursos', function () {return view('cursos.cursos');});
 
 Auth::routes();
 
@@ -27,3 +27,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profesionales', function () {return view('profesionales.profesionales');});
+Route::get('/empresas', function () {return view('empresas.empresas');});
+Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
