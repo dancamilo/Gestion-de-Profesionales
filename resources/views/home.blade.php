@@ -1,23 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<!-- Aquí se pueden agregar los elementos que se quieran mostrar en la sección del contenido de la página -->
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+<!-- Sección para mostrar las seis imágenes -->
+<section id="six-images">
+  <div class="row">
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imgcursos.png')}}" alt="">
     </div>
-</div>
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imgprofesional.png')}}" alt="">
+    </div>
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imgaccesousuarios.png')}}" alt="">
+    </div>
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imgempresas.png')}}" alt="">
+    </div>
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imgcertificados.png')}}" alt="">
+    </div>
+    <div class="col-md-4 col-12 mb-4">
+       <img class="rounded img-footer" src="{{asset('img/Imghistorial.png')}}" alt="">
+    </div>
+  </div>
+</section>
+
 @endsection
