@@ -33,3 +33,5 @@ Route::get('/informacionPersonal', function () {return view('informacionPersonal
 Route::get('/certificados', function () {return view('certificados.certificados');});
 Route::get('/accesos', function () {return view('accesos.accesos');});
 Route::get('/historiales', function () {return view('historiales.historiales');});
+Route::get('/historialCertificados', function () {return view('historialCertificados.historialCertificados');});
+

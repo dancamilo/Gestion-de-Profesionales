@@ -93,10 +93,10 @@
 
             <!-- columnas -->
             <div class="container text-center">
-                 <div class="row align-items-start">
-                   <div class="col">
+                 <div class="row align-items-start d-flex w-100">
+                   <div class="col1 w-25">
                      <div class="persona">
-                         <div class="imagen"><img src="ruta-de-la-imagen.jpg"></div>
+                         <div class="imagen"><img src="{{asset('img/User2.jpg')}}"></div>
                            <div class="info">
                              <h2>Nombre Apellido</h2>
                                 <p class="descripcion">Breve descripción</p>
@@ -108,9 +108,9 @@
                         </div>
                       </div>
                     </div>
-
                    </div>
-                   <div class="recuadro">
+                   <div class="col1 w-25">
+                   <div class="recuadro"">
                      <h3>Información académica</h3>
                         <ul>
                          <li>Bachiller</li>
@@ -118,7 +118,10 @@
                        </ul>
                          <button>Añadir</button>
                    </div>
-                   <div class="recuadro">
+                   </div>
+                </div>
+                   <div class="col2 ">
+                   <div class="recuadro w-25 prueba">
                       <h3>Experiencia laboral</h3>
                        <ul>
                       <li>Profesor - Universidad A - 2010-2015</li>
@@ -126,72 +129,21 @@
                        </ul>
                         <button>Añadir</button>
                    </div>
-                   <div class="recuadro">
+                   <div class="recuadro w-25 h-25 prueba">
                        <h3>Documentos requeridos</h3>
                     <form>
                       <input type="file">
                       <button type="submit">Añadir</button>
                    </form>
-                 </div>
-                </div>
-
+                 </div> 
                    </div>
                    <div class="col">
                    <div class="columna">
-  <div class="recuadro">
-    <h3>Rol a desempeñar</h3>
-    <p>Área especializada:</p>
-    <ul>
-      <li>Curso 1</li>
-      <li>Curso 2</li>
-    </ul>
-    <button>Añadir</button>
-  </div>
-  <div class="recuadro">
-    <h3>Horario</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Hora de inicio</th>
-          <th>Hora de fin</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes</td>
-          <td><input type="time"></td>
-          <td><input type="time"></td>
-        </tr>
-        <tr>
-          <td>Martes</td>
-          <td><input type="time"></td>
-          <td><input type="time"></td>
-        </tr>
-        <tr>
-          <td>Miércoles</td>
-          <td><input type="time"></td>
-          <td><input type="time"></td>
-        </tr>
-        <tr>
-          <td>Jueves</td>
-          <td><input type="time"></td>
-          <td><input type="time"></td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td><input type="time"></td>
-          <td><input type="time"></td>
-        </tr>
-      </tbody>
-    </table>
-    <button>Añadir</button>
-  </div>
-</div>
-
+                   <div class="recuadro">
                    </div>
                  </div>
-           </div>
+               </div>
+               
 
             @yield('content')
 
