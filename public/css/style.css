@@ -333,9 +333,6 @@ body{
     width: 80%;
     margin: 0;
 }
-.row i{
-   margin-left: 40vw; 
-}
 .collapsible-button{
     width: 40vw;
     background: var(--primary);
@@ -358,7 +355,7 @@ button i{
 }
 .add{
     width: 20%;
-    margin-left: 41.5vw;
+    margin-left: 81.5vw;
     margin-top: -5vh;
     font-size: 40px;
 }
@@ -380,10 +377,6 @@ button i{
 .imagen img{
     height: 20vh;
 }
-.prueba{
-    border: 2px dotted red;
-}
-
 .persona {
     display: flex;
     align-items: center;
@@ -540,4 +533,17 @@ button i{
   
   button:hover {
     background-color: #6C7293;
+  }
+  .titulo{
+    margin-left: -18vh;
+  }
+  .titulo i{
+    font-size: 35px;
+    color: var(--primary);
+  }
+  .titulo-div hr{
+    margin-left: -13vh;
+  }
+  .historial{
+    width: 40vw;
   }

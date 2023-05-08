@@ -9,7 +9,7 @@
         background-image: url({{asset('img/imgprofesional.png')}});
     }
     #module3{
-        background-image: url({{asset('img/imgcursos.png')}});
+        background-image: url({{asset('img/imgempresas.png')}});
     }
 
     #module4{
@@ -36,7 +36,7 @@
                 <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">ver</a>
             </div>
           </div>
-          <div class="row mt-5 row-home">>
+          <div class="row mt-5 row-home">
             <div class="col-4 mx-1 bg-dark text-white" >
                 <p class="display-6 mb-5">Historial empresas</p>
                 <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">ver</a>

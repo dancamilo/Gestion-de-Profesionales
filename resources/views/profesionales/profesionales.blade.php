@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row ad">
             <div class="col-sm-12 col-md-6 add p-0">
                 <a href="#"><i class="fa-solid fa-square-plus"></i></a>
             </div>
