@@ -24,98 +24,93 @@
         </div>
     </div>
 </div>
-<div class="d-flex mt-5">
-    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
-        <input type="checkbox" id="collapsible-demand rounded-0 mb-2">
-        <label for="collapsible-demand rounded-0 mb-2" >Perfil 1<i class="fa-solid fa-chevron-down"></i></label>
-        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
-            <div class=" w-100 h-100 ms-0 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 1</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
-                </div>
-            </div>
-            <hr class=".hr">
-            <div class=" w-100 h-100 ms-0 mt-2 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 4</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class=" img2 rounded-circle" src="{{asset('img/User2.jpg')}}" alt="">
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div>
-    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
-        <input type="checkbox" id="collapsible-demand rounded-0 mb-2 p2">
-        <label for="collapsible-demand rounded-0 mb-2 p2" >Perfil 2<i class="fa-solid fa-chevron-down"></i></label>
-        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
-            <div class=" w-100 h-100 ms-0 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 7</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class="rounded-circle" src="{{asset('img/User3.jpg')}}" alt="">
-                </div>
-            </div>
-            <hr class=".hr">
-            <div class=" w-100 h-100 ms-0 mt-2 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 3</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class=" img2 rounded-circle" src="{{asset('img/User4.jpg')}}" alt="">
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div>
-</div>
 <div class="d-flex">
-    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
-        <input type="checkbox" id="collapsible-demand rounded-0 mb-2">
-        <label for="collapsible-demand rounded-0 mb-2" >Perfil 3<i class="fa-solid fa-chevron-down"></i></label>
-        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
-            <div class=" w-100 h-100 ms-0 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 3</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
+    <div>
+        <div class="mt-5">
+            <button type="button" class="text-start px-4 py-3 ms-5" data-bs-toggle="collapse" data-bs-target="#demo">
+                Perfil 1<i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="demo" class="collapse">
+                <div class="collapsible-div position-relative text-dark rounded-0 p-4 pb-0">
+                    <div class="ms-0 border-left d-flex position-relative">
+                        <div class="p-4">
+                            <h3>Nombre</h3>
+                            <h5>Curso 1</h5>
+                            <a href="#">nombre@uniempresarial.edu.co</a>  
+                        </div>
+                        <div>
+                            <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
+                        </div>
+                    </div>
+                    <hr class=".hr">
                 </div>
             </div>
-            <hr class=".hr">
+        </div>
+        <div class="mt-5">
+            <button type="button" class="text-start px-4 py-3 ms-5" data-bs-toggle="collapse" data-bs-target="#demo2">
+                Perfil 2<i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="demo2" class="collapse">
+                <div class="collapsible-div position-relative text-dark rounded-0 p-4 pb-0">
+                    <div class="ms-0 border-left d-flex position-relative">
+                        <div class="p-4">
+                            <h3>Nombre</h3>
+                            <h5>Curso 4</h5>
+                            <a href="#">nombre@uniempresarial.edu.co</a>  
+                        </div>
+                        <div>
+                            <img class="rounded-circle" src="{{asset('img/User2.jpg')}}" alt="">
+                        </div>
+                    </div>
+                    <hr class=".hr">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
-        <input type="checkbox" id="collapsible-demand rounded-0 mb-2">
-        <label for="collapsible-demand rounded-0 mb-2" >Perfil 4<i class="fa-solid fa-chevron-down"></i></label>
-        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
-            <div class=" w-100 h-100 ms-0 border-left d-flex">
-                <div class="p-4">
-                    <h3>Nombre</h3>
-                    <h5>Curso 2</h5>
-                    <a href="#">nombre@uniempresarial.edu.co</a>  
-                </div>
-                <div>
-                    <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
+    <div>
+        <div class="mt-5">
+            <button type="button" class="text-start px-4 py-3 ms-5 me-0" data-bs-toggle="collapse" data-bs-target="#demo3">
+                Perfil 2<i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="demo3" class="collapse">
+                <div class="collapsible-div position-relative text-dark rounded-0 p-4 pb-0">
+                    <div class="ms-0 border-left d-flex position-relative">
+                        <div class="p-4">
+                            <h3>Nombre</h3>
+                            <h5>Curso 5</h5>
+                            <a href="#">nombre@uniempresarial.edu.co</a>  
+                        </div>
+                        <div>
+                            <img class="rounded-circle" src="{{asset('img/User3.jpg')}}" alt="">
+                        </div>
+                    </div>
+                    <hr class=".hr">
                 </div>
             </div>
-            <hr class=".hr">
+        </div>
+        <div class="mt-5">
+            <button type="button" class="text-start px-4 py-3 ms-5" data-bs-toggle="collapse" data-bs-target="#demo4">
+                Perfil 4<i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="demo4" class="collapse">
+                <div class="collapsible-div position-relative text-dark rounded-0 p-4 pb-0">
+                    <div class="ms-0 border-left d-flex position-relative">
+                        <div class="p-4">
+                            <h3>Nombre</h3>
+                            <h5>Curso 8</h5>
+                            <a href="#">nombre@uniempresarial.edu.co</a>  
+                        </div>
+                        <div>
+                            <img class="rounded-circle" src="{{asset('img/User4.jpg')}}" alt="">
+                        </div>
+                    </div>
+                    <hr class=".hr">
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+
+
 @endsection
