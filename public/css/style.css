@@ -5,11 +5,9 @@
     --light: #6C7293;
     --dark: white;
 }
-
 body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -17,7 +15,6 @@ body{
     bottom: 45px;
     z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -322,4 +319,60 @@ body{
 .por-50{
     display:block;
     width:50%;
+}
+.border-left{
+    border-left: solid #721422;
+    border-left-width: 10px;
+    height:80%;
+    left: 80%;
+    top: -5%;
+    position: absolute;
+}
+.hr{
+    background-color: #8D8D8D;
+    height: 2%;
+    width: 80%;
+    margin-left: 5vw;
+}
+.collapsible{
+    width: 45%;
+}
+.collapsible input{
+    display: none;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    font-size: large;
+    background: var(--primary);
+    display: block;
+    cursor: pointer;
+    padding: 15px 10px;
+    z-index: 1;
+}
+.collapsible-text, .collapsible-text div{
+    position: relative;
+    left: 0%;
+    top: -100%;
+    height: fit-content;
+    background: #F4F4F4;
+    transition: all 0.3s ease-in;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    padding-bottom: 25px;
+    background: #F4F4F4;
+    opacity: 1;
+    top: 0;
+}
+.collapsible label i{
+    padding-left: 35vw;
+}
+.collapsible-text div div img{
+    width: 5vw;
+    height: 10vh;
+    object-fit: cover;
+    margin-left: 18vw;
+    margin-top: 3vh;
 }
