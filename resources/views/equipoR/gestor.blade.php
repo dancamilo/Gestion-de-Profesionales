@@ -9,11 +9,17 @@
         background-image: url({{asset('img/imgprofesional.png')}});
     }
     #module3{
-        background-image: url({{asset('img/imgcursos.png')}});
+        background-image: url({{asset('img/imgaccesousuarios.png')}});
     }
 
     #module4{
-        background-image: url({{asset('img/imgprofesional.png')}});
+        background-image: url({{asset('img/imgempresas.png')}});
+    }
+    #module5{
+        background-image: url({{asset('img/imgcertificados.png')}});
+    }
+    #module6{
+        background-image: url({{asset('img/imghistorial.png')}});
     }
     .form-control-range{width: 100%}
 
@@ -50,16 +56,30 @@
             </div>
           </div>
           <div class="row mt-5 row-home">>
-            <div class="col-4 mx-1 bg-dark text-white" >
-                <p class="display-6 mb-5">Gestiona tus contactos empresariales</p>
+            <div class="col-4 mx-1 bg-dark text-white text-center" >
+                <p class="display-3 mb-5">Gestiona tus contactos empresariales</p>
             </div>
             <div class="col-4 mx-1" id="module3">
-                <p class="display-6 mb-5">cursos</p>
+                <p class="display-6 mb-5">Acceso de usuarios</p>
                 <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">Button</a>
             </div>
             <div class="col-4 mx-1 " id="module4">
-                <p class="display-6">Procesos de cursos</p>
-                
+                <p class="display-6 mb-5">Empresas</p>
+                <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">Button</a>
+            </div>
+          </div>
+          <div class="row mt-5 row-home">>
+            <div class="col-4 mx-1 " id="module5">
+                <p class="display-6 mb-5">Certificados</p>
+                <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">Button</a>
+            </div>
+            <div class="col-4 mx-1" id="module6">
+                <p class="display-6 mb-5">Historial</p>
+                <a name="" id="" class="btn btn-primary float-end mt-5" href="#" role="button">Button</a>
+            </div>
+            
+            <div class="col-4 mx-1 bg-dark text-white text-center" >
+                <p class="display-3 ">Almacena tus datos</p>
             </div>
           </div>
 @endsection
