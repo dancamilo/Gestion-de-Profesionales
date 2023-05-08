@@ -367,3 +367,167 @@ button i{
     margin-left: 18vw;
     margin-top: 3vh;
 }
+.imagen img{
+    height: 20vh;
+}
+.prueba{
+    border: 2px dotted red;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .imagen {
+    flex: 0 0 115px;
+    margin-right: 20px;
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    border-radius: 100%;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .descripcion {
+    margin: 10px 0;
+  }
+  
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .telefono, .correo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .telefono i, .correo i {
+    margin-right: 5px;
+  }
+  
+  .telefono:last-child, .correo:last-child {
+    margin-right: 0;
+  }
+
+  .columna {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recuadro {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .recuadro h3 {
+    margin-top: 0;
+  }
+  
+  .recuadro ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .recuadro ul li {
+    margin-bottom: 5px;
+  }
+  
+  .recuadro button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .recuadro button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .recuadro form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recuadro form input[type="file"] {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .recuadro form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .recuadro form button
+
+  .columna {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .recuadro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+  
+  input[type="time"] {
+    width: 70px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
