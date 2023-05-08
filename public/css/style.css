@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary:#721422;
+    --primary:#0E1F87;
     --secondary: #191C24;
     --light: #6C7293;
     --dark: white;
@@ -300,7 +300,7 @@ body{
     width: 30vw;
 }
 .lineas{
-    color: #721422;
+    color: #0E1F87;
 }
 .panel{
     background-color: white;
@@ -321,7 +321,7 @@ body{
     width:50%;
 }
 .border-left{
-    border-left: solid #721422;
+    border-left: solid #0E1F87;
     border-left-width: 10px;
     height:80%;
     left: 80%;

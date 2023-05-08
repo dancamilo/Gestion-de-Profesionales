@@ -53,7 +53,69 @@
             <hr>
         </div>
     </div>
-    
+    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
+        <input type="checkbox" id="collapsible-demand rounded-0 mb-2 p2">
+        <label for="collapsible-demand rounded-0 mb-2 p2" >Perfil 2<i class="fa-solid fa-chevron-down"></i></label>
+        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
+            <div class=" w-100 h-100 ms-0 border-left d-flex">
+                <div class="p-4">
+                    <h3>Nombre</h3>
+                    <h5>Curso 7</h5>
+                    <a href="#">nombre@uniempresarial.edu.co</a>  
+                </div>
+                <div>
+                    <img class="rounded-circle" src="{{asset('img/User3.jpg')}}" alt="">
+                </div>
+            </div>
+            <hr class=".hr">
+            <div class=" w-100 h-100 ms-0 mt-2 border-left d-flex">
+                <div class="p-4">
+                    <h3>Nombre</h3>
+                    <h5>Curso 3</h5>
+                    <a href="#">nombre@uniempresarial.edu.co</a>  
+                </div>
+                <div>
+                    <img class=" img2 rounded-circle" src="{{asset('img/User4.jpg')}}" alt="">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
 </div>
-
+<div class="d-flex">
+    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
+        <input type="checkbox" id="collapsible-demand rounded-0 mb-2">
+        <label for="collapsible-demand rounded-0 mb-2" >Perfil 3<i class="fa-solid fa-chevron-down"></i></label>
+        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
+            <div class=" w-100 h-100 ms-0 border-left d-flex">
+                <div class="p-4">
+                    <h3>Nombre</h3>
+                    <h5>Curso 3</h5>
+                    <a href="#">nombre@uniempresarial.edu.co</a>  
+                </div>
+                <div>
+                    <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
+                </div>
+            </div>
+            <hr class=".hr">
+        </div>
+    </div>
+    <div class="collapsible overflow-hidden ms-4 ps-2 me-5">
+        <input type="checkbox" id="collapsible-demand rounded-0 mb-2">
+        <label for="collapsible-demand rounded-0 mb-2" >Perfil 4<i class="fa-solid fa-chevron-down"></i></label>
+        <div class="collapsible-text text-dark rounded-0 p-4 pb-0">
+            <div class=" w-100 h-100 ms-0 border-left d-flex">
+                <div class="p-4">
+                    <h3>Nombre</h3>
+                    <h5>Curso 2</h5>
+                    <a href="#">nombre@uniempresarial.edu.co</a>  
+                </div>
+                <div>
+                    <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
+                </div>
+            </div>
+            <hr class=".hr">
+        </div>
+    </div>
+</div>
 @endsection
