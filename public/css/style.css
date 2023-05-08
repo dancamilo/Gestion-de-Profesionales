@@ -330,12 +330,13 @@ body{
 }
 .hr{
     background-color: #8D8D8D;
-    height: 2%;
     width: 80%;
-    margin-left: 5vw;
+    margin: 0;
 }
-
-.mt-5 button{
+.row i{
+   margin-left: 40vw; 
+}
+.collapsible-button{
     width: 40vw;
     background: var(--primary);
     border: none;
@@ -345,12 +346,21 @@ body{
     letter-spacing: 1px;
     z-index: 1;
 }
+.collapsible-button:hover{
+    background: var(--primary);
+}
 button i{
     margin-left: 32vw;
 }
 .collapsible-div{
     width: 40vw;
-    left: 6%;
+    left: 0%;
+}
+.add{
+    width: 20%;
+    margin-left: 41.5vw;
+    margin-top: -5vh;
+    font-size: 40px;
 }
 .collapsible-div div{
     width: 35vw;
@@ -521,7 +531,7 @@ button i{
   
   button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 5px;
@@ -529,5 +539,5 @@ button i{
   }
   
   button:hover {
-    background-color: #3e8e41;
+    background-color: #6C7293;
   }

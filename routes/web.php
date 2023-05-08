@@ -30,3 +30,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/profesionales', function () {return view('profesionales.profesionales');});
 Route::get('/empresas', function () {return view('empresas.empresas');});
 Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
+Route::get('/historialCertificados', function () {return view('historialCertificados.historialCertificados');});
