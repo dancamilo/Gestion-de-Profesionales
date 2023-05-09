@@ -26,6 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
+Route::get('/show', function () {return view('cursos.show');});
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profesionales', function () {return view('profesionales.profesionales');});
 Route::get('/empresas', function () {return view('empresas.empresas');});
