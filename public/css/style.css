@@ -323,7 +323,6 @@ body{
 .border-left{
     border-left: solid #0E1F87;
     border-left-width: 10px;
-    height:80%;
     left: 80%;
     top: -5%;
     position: absolute;
@@ -590,4 +589,29 @@ button i{
 .border-left2{
     border-left: solid #0E1F87;
     border-left-width: 15px;
+}
+.fa-square-caret-left{
+    color: var(--primary);
+    font-size: 35px;
+    margin: 6.5vh -2vw 0 3vw;
+}
+.filtro select, .filtro input{
+    height: 7vh;
+    width: 40%;
+    font-size: 20px;
+}
+.filtro select{
+    margin: 0 6vw;
+}
+strong{
+    color: var(--primary);
+}
+.green{
+    color: green;
+}
+.red{
+    color: #721422;
+}
+.his-user-card{
+    margin-right: 8vw;
 }

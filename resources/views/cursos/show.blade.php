@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <h2 class="mt-5 mx-5">Proceso curso 1</h2>	
     <div class="d-flex">
