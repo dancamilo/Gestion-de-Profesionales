@@ -57,8 +57,9 @@
                         <hr class="mt-3">
                         <h4 class="card-title mt-3">Documentos requeridos</h4>
                         <div class="row">
-                        <input type="file" class="btn   ">
-                        <button type="button" class="btn btn-danger mt-3 ">Añadir</button>          
+                        <input name="pdf" type="file" accept="application/pdf" />
+
+                                
                         </div>              
                     </div>
                 </div>
