@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class TypeDocs extends Model
 {
     use HasFactory;
+    protected $table="type_docs";
 }

@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\DB;
 
 class DocumentsFactory extends Factory
 {
@@ -15,8 +16,8 @@ class DocumentsFactory extends Factory
     {
         
         return [
-         'id_typedocs' => $this->faker->word(),
-         'id_profesionals' => $this->faker->word(),
+         'id_typedocs' => $this->faker->randomElement(DB::table('type_docs')->pluck('id')),
+         'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
         ];
     
     }

@@ -22,5 +22,8 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\Profesionals::factory(5)->create();
         \App\Models\Documents::factory(5)->create();
+        \App\Models\Contacts::factory(5)->create();
+        \App\Models\Courses::factory(5)->create();
+        \App\Models\Works::factory(5)->create();
     }
 }
