@@ -16,6 +16,7 @@
                             </select>
                         </div>
                     </div>
+        </div>
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <div class="mt-5">   
@@ -68,9 +69,8 @@
                     </div>
                   </div>
                 </div>
-                </div>
-                
             </div>
+        </div>
             <div class="col-sm-12 col-md-6 ">
                 
                 <div class="container mx-3 bg-gray text-white p-5 mt-5">
@@ -86,4 +86,5 @@
             </div>
         </div>   
     </div>
+</div>
 @endsection
