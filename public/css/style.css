@@ -669,3 +669,14 @@ strong{
 .btn-home2{
     background-color: #262626;
 }
+.collapsible-div2 h6{
+    font-weight: 400;
+}
+.m-cursos{
+    margin-top: 13vh;
+}
+.m-cursos i{
+    color: #0E1F87;
+    font-size: 30px;
+    margin-left: 33.3vw;
+}

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
+    <div class=" container">
+        <div class="ms-n5 row p-0">
+            <div class="ms-n5 col-sm-12 col-md-6">
                 <div class="mt-5">
-                    <h2>Cursos</h2><hr>
+                    <h2>Cursos</h2><hr class="hr mb-4">
                     <div class="row">
                         <div class="col-sm-2 text-dark">
-                            <p>Ordernar por:</p>
+                            <p class="w-100v">Ordernar por:</p>
                         </div>
                         <div class="col-sm-7">
                             <select class="form-select bg-white">
@@ -18,148 +18,103 @@
                             </select>
                         </div>
                     </div>
-                <div class="card text-white bg-light mt-5">
-                  <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h4 class="card-title">Curso 1</h4>
-                            <p class="card-text text-dark">Profesional encargado:</p>
-                            <span class="rounded-pill bg-success por-100 text-dark">100%</span>
-                            <span class="rounded-pill bg-warning por-70 text-dark">70%</span>
-                            <span class="rounded-pill bg-danger por-50 text-dark" > 50%</span>
-                        </div>
-                        <div class="col-sm-3 text-dark">
-                            <h1>30</h1>
-                            <p >Horas Restantes</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card text-white bg-light mt-5">
-                  <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h4 class="card-title">Curso 1</h4>
-                            <p class="card-text text-dark">Profesional encargado:</p>
-                            <span class="rounded-pill bg-success por-100 text-dark">100%</span>
-                            <span class="rounded-pill bg-warning por-70 text-dark">70%</span>
-                            <span class="rounded-pill bg-danger por-50 text-dark" >50%</span>
-                        </div>
-                        <div class="col-sm-3 text-dark">
-                            <h1>30</h1>
-                            <p>Horas Restantes</p>
+                    <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 1</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width:80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>30</h1>
+                                <p class="mt-3" >Horas Restantes</p>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card text-white bg-light mt-5">
-                  <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h4 class="card-title">Curso 1</h4>
-                            <p class="card-text text-dark">Profesional encargado:</p>
-                            <span class="rounded-pill bg-success por-100 text-dark">100%</span>
-                            <span class="rounded-pill bg-warning por-70 text-dark">70%</span>
-                            <span class="rounded-pill bg-danger por-50 text-dark">50%</span>
-                        </div>
-                        <div class="col-sm-3 text-dark">
-                            <h1>30</h1>
-                            <p>Horas Restantes</p>
+                    <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 2</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar bg-orange" style="width:60%">60%</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>50</h1>
+                                <p class="mt-3" >Horas Restantes</p>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-                <div class="card text-white bg-light mt-5">
-                  <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h4 class="card-title">Curso 1</h4>
-                            <p class="card-text text-dark">Profesional encargado:</p>
-                            <span class="rounded-pill bg-success por-100 text-dark">100%</span>
-                            <span class="rounded-pill bg-warning por-70 text-dark">70%</span>
-                            <span class="rounded-pill bg-danger por-50 text-dark">50%</span>
-                        </div>
-                        <div class="col-sm-3 text-dark">
-                            <h1>30</h1>
-                            <p>Horas Restantes</p>
+                    <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 3</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:35%">35%</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>70</h1>
+                                <p class="mt-3" >Horas Restantes</p>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 ">
-                <div class="container mx-3 bg-gray text-white p-5 mt-5">
-                    <form action="/action_page.php ">
-                        <div class="mb-3 mt-3  ">
-                            <center><h1 class="text-white">Añadir Cursos</h1></center>
-                            <center><h3 class="text-white">Nombre del Curso: </h3></center>
-                            <input class="form-control bg-white text-dark  " 
-                                id="" placeholder="Ingresar nombre del nuevo curso: " name="">
+            <div class="ms-5 col-sm-12 col-md-6">
+                <div class="m-cursos">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 1</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width:80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>30</h1>
+                                <p class="mt-3" >Horas Restantes</p>
+                            </div>
                         </div>
-
-                        <center><h3 class="text-white">Profesional encargado: </h3></center>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="mb-3 mt-3  ">
-                                    <select class="form-select  bg-white text-dark">
-                                        <option>Area</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
+                    </div>
+                    <div class="my-2 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 2</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar bg-orange" style="width:60%">60%</div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="mb-3 mt-3 ">
-                                    <select class="form-select  bg-white text-dark">
-                                        <option>Selecciona un Profesional</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>50</h1>
+                                <p class="mt-3" >Horas Restantes</p>
                             </div>
-
-                            <center><h3 class="text-white">Empresa relacionada: </h3></center>
-                            <div class="mb-3 mt-3 ">
-                                    <select class="form-select  bg-white text-dark">
-                                        <option>Selecciona la empresa</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                            </div>
-
-                            <center><h3 class="text-white">Fechas: </h3></center>
-                            <div class="row py-3">
-                                <div class="col-md-6 mx-auto">
-                                  <div class="row">
-                                    <div class="col-lg-6 mx-auto col-md-8 col-sm-5">
-                                      <div class="input-group">
-                                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
-                                        <input class="form-control datepicker" placeholder="Please select date" type="text" >
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                                <!-- initialization script -->
-                              <script>
-                                if (document.querySelector(".datepicker")) {
-                                   flatpickr(".datepicker", {});
-                                }
-                              </script>
-
-
                         </div>
-                        
-
-                        <center><button type="submit" class="btn btn-primary">Guardar</button></center>
-                    </form>
+                    </div>
+                    <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
+                        <div class=" border-left2 d-flex position-relative">
+                            <div class="p-4 pt-3">
+                                <h3>Curso 3</h3>
+                                <h6>Profesor encargado</h6>  
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:35%">35%</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center mt-4 text-dark">
+                                <h1>70</h1>
+                                <p class="mt-3" >Horas Restantes</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>   
         </div>   
     </div>
 @endsection
