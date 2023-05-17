@@ -38,6 +38,14 @@ Route::get('/empresas/update', function () {return view('empresas.update');});
 Route::get('/empresas/create', function () {return view('empresas.create');});
 Route::get('/certificados', function () {return view('certificados.index');});
 Route::get('/historial/home', function () {return view('historiales.index');});
-Route::get('/historial/certificados', function () {return view('historiales.certificados');});
+Route::get('/historial/cursos', function () {return view('historiales.cursos.index');});
+Route::get('/historial/cursos/show', function () {return view('historiales.cursos.show');});
+Route::get('/historial/profesionales', function () {return view('historiales.profesionales.index');});
+Route::get('/historial/profesionales/show', function () {return view('historiales.profesionales.show');});
+Route::get('/historial/perfiles', function () {return view('historiales.perfiles.index');});
+Route::get('/historial/perfiles/show', function () {return view('historiales.perfiles.show');});
+Route::get('/historial/empresas', function () {return view('historiales.empresas.index');});
+Route::get('/historial/empresas/show', function () {return view('historiales.empresas.show');});
 Route::get('/historial/usuarios', function () {return view('historiales.usuarios');});
+Route::get('/historial/certificados', function () {return view('historiales.certificados');});
 
