@@ -16,10 +16,10 @@ class CoursesFactory extends Factory
     {
         return [
             'nombre' => $this->faker->word(),
-            'duracion' => $this->faker->time($format = 'H:i:s', $max = 'now'),
+            'duracion' => $this->faker->buildingNumber(),
             'asistentes' => $this->faker->buildingNumber(),
             'valor' => $this->faker->longitude($min = 0, $max = 180),
-            'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
+            'id_profesionals' => $this->faker->randomElement([DB::table('profesionals')->pluck('id')->first()]),
             
         ];
     }

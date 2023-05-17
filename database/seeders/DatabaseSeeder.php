@@ -20,10 +20,18 @@ class DatabaseSeeder extends Seeder
         \App\Models\Companies::factory()->create([
             'nombre' => 'Kevin'
         ]);
+        
+        \App\Models\Contacts::factory(5)->create();
+        
+        
+        \App\Models\Profiles::factory(5)->create();
         \App\Models\Profesionals::factory(5)->create();
         \App\Models\Documents::factory(5)->create();
-        \App\Models\Contacts::factory(5)->create();
         \App\Models\Courses::factory(5)->create();
         \App\Models\Works::factory(5)->create();
+        \App\Models\Areas::factory(5)->create();
+        \App\Models\Certifications::factory(5)->create();
+        
+
     }
 }

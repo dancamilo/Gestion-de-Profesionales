@@ -19,7 +19,6 @@ class CreateProfesionalsTable extends Migration
             $table->string('email');
             $table->string('telefono', 64)->unique();
             $table->text('titulo')->nullable();
-            $table->foreignId('id_profiles')->constrained('profiles');
             $table->timestamps();
         });
     }
