@@ -26,15 +26,17 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
-Route::get('/show', function () {return view('cursos.show');});
+Route::get('/cursos/show', function () {return view('cursos.show');});
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/profesionales', function () {return view('profesionales.profesionales');});
+Route::get('/profesionales/create', function () {return view('profesionales.create');});
 Route::get('/empresas', function () {return view('empresas.empresas');});
 Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
 Route::get('/certificados', function () {return view('certificados.certificados');});
 Route::get('/accesos', function () {return view('accesos.accesos');});
 Route::get('/historiales', function () {return view('historiales.historiales');});
 Route::get('/historialCertificados', function () {return view('historiales.historialCertificados');});
+Route::get('/historialUsuarios', function () {return view('historiales.historialUsuarios');});
 Route::get('/gestor', function () {return view('equipoR.gestor');});
 Route::get('/equipoR', function () {return view('equipoR.index');});
 

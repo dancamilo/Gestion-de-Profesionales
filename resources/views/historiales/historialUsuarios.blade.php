@@ -14,8 +14,8 @@
         </select>
         <input type="date" name="date" id="" class="text-center">
 </div>
-<div class="d-flex w-100 mt-5 justify-content-center m-auto px-5">
-    <div class="border-left2 p-3 text-dark his-user-card">
+<div class="d-flex w-100 mt-5 justify-content-center m-auto px-5 mb-5">
+    <div class="border-left2 py-2 px-5 text-dark his-user-card">
         <h3 class="pb-3"><strong>02 de Marzo de 2023</strong></h3>
         <h4 class="green">Usuario 1</h4>
         <p class="mb-1">Hora de ingreso: 2:30 pm</p>
@@ -27,7 +27,7 @@
         <p class="mb-1">Hora de ingreso: 8:30 am</p>
         <p>Hora de salida:   10:29 am</p>
     </div>
-    <div class="border-left2 p-3 text-dark his-user-card">
+    <div class="border-left2 py-2 px-5 text-dark his-user-card">
         <h3 class="pb-3"><strong>03 de Marzo de 2023</strong></h3>
         <h4 class="red">Usuario 1</h4>
         <p class="mb-1">Hora de ingreso: 4:55 pm</p>
@@ -39,7 +39,7 @@
         <p class="mb-1">Hora de ingreso: 9:10 am</p>
         <p>Hora de salida:   10:50 am</p>
     </div>
-    <div class="border-left2 p-3 text-dark">
+    <div class="border-left2 py-2 px-5 text-dark">
         <h3 class="pb-3"><strong>04 de Marzo de 2023</strong></h3>
         <h4 class="green">Usuario 1</h4>
         <p class="mb-1">Hora de ingreso: 10:35 am</p>
