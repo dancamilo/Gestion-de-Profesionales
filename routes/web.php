@@ -18,23 +18,34 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cursos', function () {return view('cursos.cursos');});
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/show', function () {return view('cursos.show');});
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profesionales', function () {return view('profesionales.profesionales');});
-Route::get('/empresas', function () {return view('empresas.empresas');});
-Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
-Route::get('/certificados', function () {return view('certificados.certificados');});
-Route::get('/accesos', function () {return view('accesos.accesos');});
-Route::get('/historiales', function () {return view('historiales.historiales');});
-Route::get('/historialCertificados', function () {return view('historiales.historialCertificados');});
-Route::get('/gestor', function () {return view('equipoR.gestor');});
-Route::get('/equipoR', function () {return view('equipoR.index');});
+Route::get('/cursos', function () {return view('cursos.index');});
+Route::get('/cursos/show', function () {return view('cursos.show');});
+Route::get('/profesionales', function () {return view('profesionales.index');});
+Route::get('/profesionales/create', function () {return view('profesionales.create');});
+Route::get('/profesionales/create/2', function () {return view('profesionales.create2');});
+Route::get('/profesionales/show', function () {return view('profesionales.show');});
+Route::get('/profesionales/update', function () {return view('perfiles.update');});
+Route::get('/perfiles', function () {return view('perfiles.index');});
+Route::get('/perfiles/show', function () {return view('perfiles.show');});
+Route::get('/perfiles/update', function () {return view('perfiles.update');});
+Route::get('/usuarios', function () {return view('usuarios.index');});
+Route::get('/empresas', function () {return view('empresas.index');});
+Route::get('/empresas/show', function () {return view('empresas.show');});
+Route::get('/empresas/update', function () {return view('empresas.update');});
+Route::get('/empresas/create', function () {return view('empresas.create');});
+Route::get('/certificados', function () {return view('certificados.index');});
+Route::get('/historial/home', function () {return view('historiales.index');});
+Route::get('/historial/cursos', function () {return view('historiales.cursos.index');});
+Route::get('/historial/cursos/show', function () {return view('historiales.cursos.show');});
+Route::get('/historial/profesionales', function () {return view('historiales.profesionales.index');});
+Route::get('/historial/profesionales/show', function () {return view('historiales.profesionales.show');});
+Route::get('/historial/perfiles', function () {return view('historiales.perfiles.index');});
+Route::get('/historial/perfiles/show', function () {return view('historiales.perfiles.show');});
+Route::get('/historial/empresas', function () {return view('historiales.empresas.index');});
+Route::get('/historial/empresas/show', function () {return view('historiales.empresas.show');});
+Route::get('/historial/usuarios', function () {return view('historiales.usuarios');});
+Route::get('/historial/certificados', function () {return view('historiales.certificados');});
 

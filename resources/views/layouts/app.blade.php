@@ -33,12 +33,12 @@
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
-        <!-- Spinner Start -->
+        <!-- Spinner Start 
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
 
 
@@ -56,8 +56,9 @@
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
                     <a href="#" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa-solid fa-user-group"></i></a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa-solid fa-user-shield"></i></a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-address-book"></i></a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa-solid fa-door-open"></i></a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa-solid fa-building"></i><a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa-solid fa-file-arrow-up"></i></a>
                     <a href="#" class="nav-item nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
