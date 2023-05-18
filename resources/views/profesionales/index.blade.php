@@ -23,7 +23,7 @@
         </div>
         <div class="row ad">
             <div class="col-sm-12 col-md-6 add p-0">
-                <a href="#"><i class="fa-solid fa-square-plus"></i></a>
+                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
             </div>
         </div>
     </div>

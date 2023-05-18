@@ -596,12 +596,6 @@ button i{
 strong{
     color: var(--primary);
 }
-.green{
-    color: green;
-}
-.red{
-    color: #721422;
-}
 .his-user-card{
     margin-right: 10vw;
 }
@@ -679,4 +673,7 @@ strong{
     color: #0E1F87;
     font-size: 30px;
     margin-left: 33.3vw;
+}
+.h-25v{
+    height: 25vw;
 }
