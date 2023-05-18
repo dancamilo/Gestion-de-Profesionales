@@ -674,6 +674,6 @@ strong{
     font-size: 30px;
     margin-left: 33.3vw;
 }
-.h-25v{
-    height: 25vw;
+input[type=radio]{
+    background: var(--light);
 }
