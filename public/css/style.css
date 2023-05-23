@@ -686,3 +686,16 @@ input[type=radio]{
 .fa-twitter{
     color: deepskyblue;
 }
+.fa-square-instagram{
+    color: orange;
+}
+.fa-tiktok{
+    text-shadow: 1px 2px 0px red, -1px -1px 0px deepskyblue;
+}
+h5{
+    font-weight: lighter;
+}
+.create-card p{
+    text-align: justify;
+    width: 85%;
+}
