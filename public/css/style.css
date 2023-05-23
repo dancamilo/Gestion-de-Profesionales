@@ -677,3 +677,12 @@ strong{
 input[type=radio]{
     background: var(--light);
 }
+.create-card i{
+    margin-right: .5vw;
+}
+.fa-facebook, .fa-linkedin{
+    color: blue;
+}
+.fa-twitter{
+    color: deepskyblue;
+}
