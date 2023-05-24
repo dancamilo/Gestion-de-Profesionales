@@ -137,7 +137,7 @@
                 <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Hora final">
         </div>
         <div class="text-center mb-3">
-            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Añadir</a>
+            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Continuar</a>
         </div>
     </div>
 </div>

@@ -1,98 +1,77 @@
 @extends('layouts.app')
-
 @section('content')
-
-<div class="row">
-    <div class="col-sm-4 "><br>
-
-        <h2>RUT: 123456789</h2><hr>
-        <h3>Informacion principal</h3>
-        <img src="" alt="">
-        <h5>Nombre:</h5>
-        <h5>Razon social</h5><hr>
-        <div class="table-responsive ">
-            <table class="">
-                <thead>
-                    <tr>
-                        <th scope="">Nit: </th>
-                        <th scope="">Codigo de verificacion: </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="">
-                        <td scope="">Colombia</td>
-                        <td>Actividad economica</td>
-                    </tr>
-                    <tr class="">
-                        <td scope="">Direccion</td>
-                        <td>Localidad</td>
-                    </tr>
-                    <tr>
-                        <td>400 empleados</td>
-                        <td>Mediana</td>
-                    </tr>
-                    <tr>
-                        <td>Digital</td>
-                        <td>123456</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.w3schools.com/html/html_links.asp">UWu</a></td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="d-flex w-100v mt-3">
+        <div class="create-card w-25 me-4 p-4">
+            <h3>Rut: 012345678</h3>
+            <hr width="80%">
+            <h4 class="pt-3">Información personal</h4>
+            <div class="d-flex my-3">
+                <div class="img-card d-grid me-4">
+                    <img class="img-card" src="{{ asset('img/Empresa1.jpg') }}" alt="">
+                </div>
+                <div class="">
+                    <h5 class="mt-3 mb-4">Nombre</h5>
+                    <h5>Razón social</h5>
+                </div>
+            </div>
+            <hr width="80%">
+            <div class="d-flex my-3">
+                <h5 class="me-5">012345678</h5>
+                <h5>1234</h5>
+            </div>
+            <div class="d-flex my-3">
+                <h5 class="me-5">Colombia</h5>
+                <h5>Actividad económica</h5>
+            </div>
+            <div class="d-flex my-3">
+                <h5 class="me-5">Dirección</h5>
+                <h5>Localidad</h5>
+            </div>
+            <div class="d-flex my-3">
+                <h5 class="me-5">400 emp</h5>
+                <h5 class="ms-1">Mediana</h5>
+            </div>
+            <div class="d-flex my-3">
+                <h5 class="me-4">Carlos Mora</h5>
+                <h5>12345678</h5>
+            </div>
+            <h5 class="my-4">www.empresa.com</h5>
+        </div>
+        <div class="w-25 me-2 p-4 align-items-center justify-content-center text-left">
+            <h4 class="pt-3">Información de contacto</h4>
+            <div class="d-flex my-3">
+                <h5 class="me-5">C.C</h5>
+                <h5 class="ms-5">12345678</h5>
+            </div>
+            <div class="d-flex mb-3">
+                <h5 class="me-5">Cargo</h5>
+                <h5 class="ms-4 ps-1">Área especializada</h5>
+            </div>
+            <div class="d-flex mb-3">
+                <h5 class="me-4">12345678</h5>
+                <h5 class="ms-3">(+57)32048822337</h5>
+            </div>
+            <h5 class="my-3">nombre@gmail.com</h5>
+            <h5 class="my-3">nombre@empresa.edu.com</h5>
+            <hr class="mt-1" width="80%">
+            <h4 class="pt-3">Documentos requeridos</h4>
+            <div class="text-center mb-3">
+                <a name="" id="" class=" px-5 w-100 btn btn-primary" href="#" role="button">Descargar archivos</a>
+            </div>
+        </div>
+        <div class="create-card w-25 me-4 p-4">
+            <h4>Rol a desempeñar</h4>
+            <h5 class="text-left">Área especializada</h5>
+            <h5 class="text-left mt-3">Curso 1</h5>
+            <h5 class="text-left mt-3">Curso 2</h5>
+            <h5 class="text-left mt-3">Profesional 1</h5>
+            <h5 class="text-left my-3">Profesional 2</h5>
+            <hr width="80%">
+            <h4 class="pt-3">Observaciones</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, eius? Unde recusandae dolorum in labore! Voluptas cumque tenetur aperiam totam alias, vel veniam est, unde corrupti sequi necessitatibus, molestiae illum?</p>
+            <div class="text-center mb-3">
+                <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Editar</a>
+            </div>
         </div>
     </div>
-    <div class="col-sm-4"><br>
-        <h4>Informacion de contacto de empresa</h4><hr>
-        <div class="table-responsive">
-        <table>
-            <tbody>
-                <tr>
-                    <td>C.c:   </td>
-                    <td>123456789</td>
-                </tr>
-                <tr>
-                    <td>cargo: </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Area especializada: </td>
-                </tr>
-                <tr>
-                    <td>123456789</td>
-                    <td>"(+57)312427986"</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.w3schools.com/html/html_links.asp">UWu</a></td>
-                    <td><a href="https://www.w3schools.com/html/html_links.asp">UWu</a></td>
-                </tr>
-            </tbody>
-        </table> </div><hr>
-
-        <h4>Documentos requeridos</h4>
-        <div class="table-responsive">
-        <table class="">
-            <thead>
-                <th><img src="" alt="">Img1</th>
-                <th><img src="" alt="">img 2</th>
-                <th><img src="" alt="">img 3</th>
-            </thead>
-        </table>
-    </div>
-        <button type="submit" class="btn btn-danger">Descargar</button>
-
-
-    </div><br>
-    <div class="col-sm-4"><br>
-        <h4>Rol a desempeñar</h4><hr>
-            <ul>Area especializada</ul>
-            <ul>Curso 1</ul>
-            <ul>curso 2</ul>
-            <ul>Profesional encargardo</ul><hr>
-        <h5>Observaciones</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aperiam sapiente ea cum fuga. Voluptatem magni facere accusantium commodi dolorem rem ipsa, accusamus dignissimos perferendis explicabo, vero recusandae et quasi!</p>
-        <button  class="btn btn-danger">Editar</button>
-    </div>
-  </div>
-
 @endsection
