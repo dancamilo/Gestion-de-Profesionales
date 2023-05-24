@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CoursesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/cursos', CoursesController::class)->names('cursos');
 Route::get('/cursos', function () {return view('cursos.index');});
 Route::get('/cursos/show', function () {return view('cursos.show');});
 Route::get('/profesionales', function () {return view('profesionales.index');});
