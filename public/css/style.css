@@ -364,6 +364,14 @@ button i{
     margin-left: 81.5vw;
     margin-top: -5vh;
     font-size: 40px;
+    color: #0E1F87;
+}
+.add2{
+    width: 20%;
+    margin-left: 77.5vw;
+    margin-top: -8vh;
+    font-size: 40px;
+    color: #0E1F87;
 }
 .collapsible-div div{
     width: 35vw;
@@ -698,4 +706,13 @@ h5{
 .create-card p{
     text-align: justify;
     width: 85%;
+}
+.fa-pen, .fa-folder, .fa-trash-can{
+    font-size: 24px;
+}
+.fa-user-plus{
+    font-size: 30px;
+}
+.add3{
+    margin-left: 71.2vw;
 }
