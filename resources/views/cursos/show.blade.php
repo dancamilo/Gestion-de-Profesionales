@@ -12,7 +12,7 @@
             <div class="d-flex w-100">
                 <div class="process-card2 d-flex mt-4 ms-5 w-50 p-3">
                     <div class="border-left2 p-2 ps-3">
-                        <h4 class="">Este curso <br> ha sido <br> realizado 4 veces</h4>
+                        <h4 class="">La duración de <br> este curso es de<br> 100 horas</h4>
                     </div>
                     <div class="w-25 mt-5 ms-5 pt-4">
                         <a href="#">Ver historial</a>
