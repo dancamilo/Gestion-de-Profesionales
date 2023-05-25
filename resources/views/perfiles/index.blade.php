@@ -22,7 +22,7 @@
         </div>
         <div class="row ad">
             <div class="col-sm-12 col-md-6 add2 p-0">
-                <a href="#" class="ms-n5"><i class="fa-solid fa-circle-plus ms-n5"></i></a>
+                <a href="#"><i class="fa-solid fa-circle-plus ms-n5"></i></a>
             </div>
         </div>
     </div>

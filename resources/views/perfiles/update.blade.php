@@ -36,7 +36,7 @@
                 </div>
                 <div class="ms-5 ps-5">
                     <img class="rounded-circle mt-4 ms-5 h-70" src="{{asset('img/User1.jpg')}}" alt="">
-                    <i class="fa-solid fa-trash-can text-primary ms-4"></i>
+                    <i class="fa-solid fa-minus text-primary ms-4"></i>
                 </div>
             </div>
             <hr class="my-2">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="ms-5 ps-5">
                     <img class="rounded-circle mt-4 ms-5 h-70" src="{{asset('img/User2.jpg')}}" alt="">
-                    <i class="fa-solid fa-trash-can text-primary ms-4"></i>
+                    <i class="fa-solid fa-minus text-primary ms-4"></i>
                 </div>
             </div>
             <hr class="my-2">
@@ -66,7 +66,7 @@
                 </div>
                 <div class="ms-5 ps-5">
                     <img class="rounded-circle mt-4 ms-5 h-70" src="{{asset('img/User3.jpg')}}" alt="">
-                    <i class="fa-solid fa-trash-can text-primary ms-4"></i>
+                    <<i class="fa-solid fa-minus text-primary ms-4"></i>
                 </div>
             </div>
             <hr class="my-2">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="ms-5 ps-5">
                     <img class="rounded-circle mt-4 ms-5 h-70" src="{{asset('img/User4.jpg')}}" alt="">
-                    <i class="fa-solid fa-trash-can text-primary ms-4"></i>
+                    <i class="fa-solid fa-minus text-primary ms-4"></i>
                 </div>
             </div>
             <hr class="my-2">
