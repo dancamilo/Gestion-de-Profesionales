@@ -605,7 +605,7 @@ strong{
     color: var(--primary);
 }
 .his-user-card{
-    margin-right: 10vw;
+    margin-right: 7.5vw;
 }
 .process-card2 div{
     height: 11vh;
@@ -715,4 +715,14 @@ h5{
 }
 .add3{
     margin-left: 59.3vw;
+}
+.text-cursos{
+    width: 30vw;
+}
+.create-card2{
+    width: 33vw;
+    background: var(--gray);
+}
+.w-40{
+    width: 14.5vw;
 }

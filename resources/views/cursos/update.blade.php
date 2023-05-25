@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<h2 class="mt-5 mb-2 mx-5">Añadir curso</h2>
+<h2 class="mt-5 mb-2 mx-5">Editar curso</h2>
     <hr class='mx-5' width="20%" />	
     <div class="d-flex mt-2 mb-5">
         <div class="create-card2 mt-2 ms-5">
