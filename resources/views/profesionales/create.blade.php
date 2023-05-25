@@ -51,9 +51,6 @@
             <input type="text" class="form-control w-50 me-2" name="name" id="" aria-describedby="helpId" placeholder="Título">
             <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Institución">
         </div>
-        <div class="text-center mb-5">
-            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Añadir</a>
-        </div>
         <hr class="mt-1" width="80%">
         <h4 class="pt-3">Información profesional</h4>
         <div class="d-flex my-3">
