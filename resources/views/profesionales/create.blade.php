@@ -85,6 +85,9 @@
         <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
             <option selected value="">Área especializada</option>
         </select>
+        <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
+            <option selected value="">Perfil</option>
+        </select>
         <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
         <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
         <input type="text" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
