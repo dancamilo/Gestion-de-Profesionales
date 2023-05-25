@@ -34,7 +34,10 @@
                                 <p class="mt-3" >Horas Restantes</p>
                             </div>
                         </div>
-                        <a class=" btn btn-danger" href="#" role="button">Eliminar</a>
+                        <a class=" btn btn-danger" href="#
+                        
+                        
+                        " role="button">Eliminar</a>
                         <a class="btn btn-primary" href="{{route('cursos.show', $course->id)}}" role="button">Detalles</a>
                         </div>
                     @endforeach

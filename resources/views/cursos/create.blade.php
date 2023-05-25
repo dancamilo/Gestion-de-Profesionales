@@ -5,8 +5,35 @@
     <div class="d-flex mt-2 mb-5">
         <form class="create-card2 mt-2 ms-5" method="POST">
             <h3 class="mt-3 ms-4">Nombre del curso:</h3>
+            <div class="ms-4 mt-3 w-100">
+                <input type="text" class="text-cursos" name="nombre" >
+            </div>
+            <h3 class="mt-5 ms-4">Área especializada:</h3>
+            <div class="ms-4 mt-3 w-100">
+                <select name="" id="" class="text-cursos text-center py-1">
+                    <option value="" selected> Seleccione un área</option>
+                </select>
+            </div>
+            <h3 class="mt-5 ms-4">Profesional encargado:</h3>
+            <div class="ms-4 mt-3 w-100">
+                <select name="" id="" class="text-cursos text-center py-1">
+                    <option value="" selected> Seleccione un profesional</option>
+                </select>
+            </div>
+            <h3 class="mt-5 ms-4">Empresa relacionada:</h3>
+            <div class="ms-4 mt-3 w-100">
+                <select name="" id="" class="text-cursos text-center py-1">
+                    <option value="" selected> Seleccione un profesional</option>
+                </select>
+            </div>
+            <h3 class="mt-5 ms-4">Fechas:</h3>
+            <div class="ms-4 mt-3 my-5 d-flex">
+                <div class="d-grid">
+                    <label for="date-start" class="text-dark pb-1">Fecha inicio</label>
+                    <input type="date" name="date-start" class="w-40 text-center py-1">
                 <div class="ms-4 mt-3 w-100">
                     <input type="text" class="text-cursos">
+
                 </div>
                 <h3 class="mt-5 ms-4">Área especializada:</h3>
                 <div class="ms-4 mt-3 w-100">
