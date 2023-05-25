@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <a class=" btn btn-danger" href="#" role="button">Eliminar</a>
-                        <a name="" id="" class="btn btn-primary" href="#" role="button">Detalles</a>
+                        <a class="btn btn-primary" href="{{route('cursos.show', $course->id)}}" role="button">Detalles</a>
                         </div>
                     @endforeach
 

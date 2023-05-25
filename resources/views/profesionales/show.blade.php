@@ -43,8 +43,17 @@
             <h5 class="me-5">Título</h5>
             <h5 class="ms-4">Institución</h5>
         </div>
-        <hr class="mt-1" width="80%">
-        <h4 class="pt-3">Información profesional</h4>
+        <div class="d-flex mb-3">
+            <h5 class="me-5">Título</h5>
+            <h5 class="ms-4">Institución</h5>
+        </div>
+        <hr class="mt-5" width="80%">
+        <h4 class="pt-3 mt-5">Información profesional</h4>
+        <div class="d-flex my-3">
+            <h5 class="w-25 me-5">Cargo</h5>
+            <h5 class="me-5">Empresa</h5>
+            <h5 class="w-25 me-5">Tiempo</h5>
+        </div>
         <div class="d-flex my-3">
             <h5 class="w-25 me-5">Cargo</h5>
             <h5 class="me-5">Empresa</h5>

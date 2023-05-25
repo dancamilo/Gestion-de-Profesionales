@@ -15,8 +15,8 @@ class AreasFactory extends Factory
     public function definition()
     {
         return [
-            'id_profesionals' => $this->faker->randomElement([DB::table('profesionals')->pluck('id')->first()]),
-            'id_profiles' => $this->faker->randomElement([DB::table('profiles')->pluck('id')->first()]),
+            'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
+            'id_profiles' => $this->faker->randomElement(DB::table('profiles')->pluck('id')),
         ];
     }
 }

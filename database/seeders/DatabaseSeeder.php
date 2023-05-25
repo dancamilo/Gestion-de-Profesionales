@@ -17,13 +17,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\TypeDocs::factory()->create([
             'type' => 'tarjeta de identidad'
         ]);
-        \App\Models\Companies::factory()->create([
-            'nombre' => 'Kevin'
-        ]);
-        
+        \App\Models\Companies::factory(5)->create();
         \App\Models\Contacts::factory(5)->create();
-        
-        
         \App\Models\Profiles::factory(5)->create();
         \App\Models\Profesionals::factory(5)->create();
         \App\Models\Documents::factory(5)->create();

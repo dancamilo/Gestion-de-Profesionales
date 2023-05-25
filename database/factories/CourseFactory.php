@@ -19,7 +19,12 @@ class CourseFactory extends Factory
             'duracion' => $this->faker->buildingNumber(),
             'asistentes' => $this->faker->buildingNumber(),
             'valor' => $this->faker->longitude($min = 0, $max = 180),
-            'id_profesionals' => $this->faker->randomElement([DB::table('profesionals')->pluck('id')->first()]),
+            'descripcion' => $this->faker->realText($maxNbChars = 200, $indexSize = 2),
+            'observaciones' => $this->faker->realText($maxNbChars = 200, $indexSize = 2),
+            'fecha_inicial' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'fecha_final' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
+            'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),
             
         ];
     }
