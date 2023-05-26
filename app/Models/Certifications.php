@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Certifications extends Model
 {
     use HasFactory;
+
+    public function Certifications()
+    {
+        return $this->hasMany(Certifications::class,'id');
+    }
+    
+    public function courses()
+    {
+        return $this->belongsTo(courses::class,'id_courses');
+    }
 }

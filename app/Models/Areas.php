@@ -9,8 +9,12 @@ class Areas extends Model
 {
     use HasFactory;
 
-    public function Profile()
+    public function Profiles()
     {
-        return $this->hasMany(Profile::class,'id');
+        return $this->belongsTo(Profiles::class,'id_profiles');
+    }
+    public function profesionals()
+    {
+        return $this->belongsTo(profesionals::class,'id_profesionals');
     }
 }

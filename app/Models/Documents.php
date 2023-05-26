@@ -9,4 +9,13 @@ use Illuminate\Database\Eloquent\Model;
 class Documents extends Model
 {
     use HasFactory;
+
+    public function TypeDocs()
+    {
+        return $this->belongsTo(TypeDocs::class,'id_typedocs');
+    }
+    public function profesionals()
+    {
+        return $this->belongsTo(profesionals::class,'id_profesionals');
+    }
 }

@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profiles;
 use App\Models\Course;
+use App\Models\Profesionals;
+use App\Models\Companies;
+
 use Exception;
 use Illuminate\Http\Request;
 
@@ -26,7 +30,10 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        return view ('cursos.create');
+        $profiles = Profiles::all();
+        $profesionals = Profesionals::all();
+        $companies = Companies::all();
+        return view ('cursos.create',compact('profiles','profesionals', 'companies'));
     }
 
     /**
@@ -37,7 +44,19 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $course = new Course();
+        $course ->nombre = $request->nombre;
+        $course ->duracion = $request->duracion;
+        $course ->id_areas = $request->id_areas;
+        $course ->descripcion = $request->descripcion;
+        $course ->observaciones = $request->observaciones;
+        $course ->fecha_inicial = $request->fecha_inicial;
+        $course ->fecha_final = $request->fecha_final;
+        $course ->id_profesionals = $request->id_profesionals;
+        $course ->id_companies = $request->id_companies;
+
+        $course->save();
+        return redirect(route('cursos.index')) ;
     }
 
     /**

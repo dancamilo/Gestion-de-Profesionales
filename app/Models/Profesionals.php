@@ -9,12 +9,8 @@ class Profesionals extends Model
 {
     use HasFactory;
 
-    public function Course()
+    public function Profesionals()
     {
-        return $this->hasMany(Course::class,'id');
-    }
-    public function Profile()
-    {
-        return $this->hasMany(Profile::class,'id');
+        return $this->hasMany(Profesionals::class,'id');
     }
 }

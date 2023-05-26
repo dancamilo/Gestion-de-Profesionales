@@ -8,15 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Profiles extends Model
 {
     use HasFactory;
-
-    public function profesionals()
-    {
-        return $this->belongsTo(Profesionals::class,'id_profesionals');
-    }
-
-    public function areas()
-    {
-        return $this->belongsTo(Areas::class,'id_areas');
-    }
     
+    public function Profiles()
+    {
+        return $this->hasMany(Profiles::class,'id');
+    }
 }
