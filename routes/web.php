@@ -23,6 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+<<<<<<< Updated upstream
 Route::resource('/cursos', CoursesController::class)->names('cursos');
 Route::resource('/perfiles', ProfilesController::class)->names('perfiles');
 Route::get('/profesionales', function () {return view('profesionales.index');});
@@ -51,3 +52,14 @@ Route::get('/historial/empresas', function () {return view('historiales.empresas
 Route::get('/historial/empresas/show', function () {return view('historiales.empresas.show');});
 Route::get('/historial/usuarios', function () {return view('historiales.usuarios');});
 Route::get('/historial/certificados', function () {return view('historiales.certificados');});
+=======
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profesionales', function () {return view('profesionales.profesionales');});
+Route::get('/empresas', function () {return view('empresas.empresas');});
+Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
+
+Route::get('/profesionales', function(){return view('equipoR.profesionales');});
+>>>>>>> Stashed changes
