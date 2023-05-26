@@ -11,11 +11,8 @@
             </div>
             <div class="d-flex w-100">
                 <div class="process-card2 d-flex mt-4 ms-5 w-50 p-3">
-                    <div class="border-left2 p-2 ps-3">
-                        <h4 class="">La duración de <br> este curso es de<br> 100 horas</h4>
-                    </div>
-                    <div class="w-25 mt-5 ms-5 pt-4">
-                        <a href="#">Ver historial</a>
+                    <div class="border-left2 p-2 pt-3 ps-3">
+                        <h3 class="">La duración de este<br> curso es de {{$course->duracion}} horas</h3>
                     </div>
                 </div>
                 <div class="process-card3 w-25 mt-4 mx-5">
@@ -33,7 +30,7 @@
         <div class="w-50 ms-5">
             <div class=" mb-4 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
                 <div class=" border-left2 d-flex position-relative">
-                    <div class="p-4 pt-3">
+                    <div class="p-4 pt-3 show-create">
                         <h3> {{$course->profesionals->nombre}}</h3>
                         <h5>Área especializada</h5>
                         <a href="#">{{$course->profesionals->email}}</a>  
@@ -45,7 +42,7 @@
             </div>
             <div class="my-4 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
                 <div class=" border-left2 d-flex position-relative">
-                    <div class="p-4 pt-3">
+                    <div class="p-4 pt-3 show-create">
                         <h3>{{$course->companies->nombre}}</h3>
                         <h5>{{$course->companies->direccion}}</h5>
                         <a href="#">{{$course->companies->rut}}</a>  
@@ -57,7 +54,7 @@
             </div>
             <div class="my-3 collapsible-div2 position-relative text-dark rounded-0 p-4 pb-2">
                 <div class=" border-left2 d-flex position-relative">
-                    <div class="p-4 pt-3">
+                    <div class="p-4 pt-3 show-create">
                         <h3>{{$course->companies->telefono}}</h3>
                         <h5>Área especializada</h5>
                         <a href="#">{{$course->companies->email}}</a>  

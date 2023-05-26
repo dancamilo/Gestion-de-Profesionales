@@ -561,6 +561,7 @@ a i:hover{
 }
 .process-card{
     width: 40vw;
+    height: 25%;
 }
 .process-card2{
     height:14vh;
@@ -581,7 +582,7 @@ a i:hover{
     line-height: 0.5;
 }
 .ficha{
-    width: 81%;
+    width: 38vw;
     background: var(--primary);
     color: white;
     border-radius: 0;
@@ -837,4 +838,7 @@ transition: all .2s ease;
 .button-delete, .button-delete:hover{
     background: none;
     width: 3vw;
+}
+.show-create{
+    width: 28vw;
 }
