@@ -17,15 +17,15 @@ class DatabaseSeeder extends Seeder
         \App\Models\TypeDocs::factory()->create([
             'type' => 'tarjeta de identidad'
         ]);
+        \App\Models\Areas::factory(5)->create();
         \App\Models\Companies::factory(5)->create();
         \App\Models\Contacts::factory(5)->create();
-        \App\Models\Profiles::factory(5)->create();
         \App\Models\Profesionals::factory(5)->create();
         \App\Models\Documents::factory(5)->create();
         \App\Models\Course::factory(5)->create();
         \App\Models\Works::factory(5)->create();
-        \App\Models\Areas::factory(5)->create();
         \App\Models\Certifications::factory(5)->create();
+        \App\Models\Profiles::factory(5)->create();
         
 
     }
