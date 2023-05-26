@@ -631,7 +631,7 @@ strong{
 }
 .create-card{
     background: var(--gray);
-    color: black;
+    color: #0718b1;
 }
 .img-card img{
     height: 15vh;
@@ -679,7 +679,7 @@ strong{
     width: 100vw;
 }
 .bg-orange{
-    background-color: #FF9E5A;
+    background-color: #fd0728;
 }
 .btn-home,.btn-home2{
     width: 10vw;
@@ -714,7 +714,7 @@ input[type=radio]{
     color: deepskyblue;
 }
 .fa-square-instagram{
-    color: orange;
+    color: rgb(255, 0, 34);
 }
 .fa-tiktok{
     text-shadow: 1px 2px 0px red, -1px -1px 0px deepskyblue;
