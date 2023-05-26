@@ -17,8 +17,7 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->char('duracion');
-            $table->char('asistentes');
-            $table->text('valor');
+            $table->foreignId('id_areas')->constrained('areas');
             $table->text('descripcion');
             $table->text('observaciones');
             $table->date('fecha_inicial');

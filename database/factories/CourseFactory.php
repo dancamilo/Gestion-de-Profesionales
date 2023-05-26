@@ -17,8 +17,7 @@ class CourseFactory extends Factory
         return [
             'nombre' => $this->faker->word(),
             'duracion' => $this->faker->buildingNumber(),
-            'asistentes' => $this->faker->buildingNumber(),
-            'valor' => $this->faker->longitude($min = 0, $max = 180),
+            'id_areas' => $this->faker->randomElement(DB::table('areas')->pluck('id')),
             'descripcion' => $this->faker->realText($maxNbChars = 200, $indexSize = 2),
             'observaciones' => $this->faker->realText($maxNbChars = 200, $indexSize = 2),
             'fecha_inicial' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
