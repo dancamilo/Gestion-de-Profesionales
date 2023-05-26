@@ -76,6 +76,7 @@
               </div>
             <input type="submit" value="Subir archivos">
         </form>
+        
       </div>
     </div>
   </div>
