@@ -51,6 +51,10 @@
             <input type="text" class="form-control w-50 me-2" name="name" id="" aria-describedby="helpId" placeholder="Título">
             <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Institución">
         </div>
+        <div class="d-flex mb-3">
+            <input type="text" class="form-control w-50 me-2" name="name" id="" aria-describedby="helpId" placeholder="Título">
+            <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Institución">
+        </div>
         <hr class="mt-1" width="80%">
         <h4 class="pt-3">Información profesional</h4>
         <div class="d-flex my-3">
@@ -73,8 +77,10 @@
             <input type="text" class="form-control w-50" name="lastname" id="" aria-describedby="helpId" placeholder="Empresa">
             <input type="text" class="form-control w-25 ms-2" name="name" id="" aria-describedby="helpId" placeholder="Tiempo">
         </div>
-        <div class="text-center mb-3">
-            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Añadir</a>
+        <div class="d-flex my-3">
+            <input type="text" class="form-control w-25 me-2" name="name" id="" aria-describedby="helpId" placeholder="Cargo">
+            <input type="text" class="form-control w-50" name="lastname" id="" aria-describedby="helpId" placeholder="Empresa">
+            <input type="text" class="form-control w-25 ms-2" name="name" id="" aria-describedby="helpId" placeholder="Tiempo">
         </div>
     </div>
     <div class="create-card w-25 me-4 p-4">
@@ -82,51 +88,54 @@
         <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
             <option selected value="">Área especializada</option>
         </select>
-        <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
+        <select class="w-100 ps-2 py-2 me-2 mt-3 text-left" name="" id="">
             <option selected value="">Perfil</option>
         </select>
-        <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
-        <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
-        <input type="text" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
-        <div class="text-center mb-3">
-            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Añadir</a>
-        </div>
+        <select class="w-100 ps-2 py-2 me-2 mt-3 text-left" name="" id="">
+            <option selected value="">Curso a Realizar</option>
+        </select>
+        <select class="w-100 ps-2 py-2 me-2 mt-3 text-left" name="" id="">
+            <option selected value="">Curso a Realizar</option>
+        </select>
+        <select class="w-100 ps-2 py-2 me-2 mt-3 text-left" name="" id="">
+            <option selected value="">Curso a Realizar</option>
+        </select>
         <hr width="80%">
         <h4 class="pt-3">Horario disponible</h4>
         <div class="">
             <div class="w-100">
                 <div class="btn-group" data-bs-toggle="buttons">
-                    <label class="me-5">
+                    <label class="me-5 radio">
                         <input type="radio" class="me-2" name="" id="" autocomplete="off"> Lunes
                     </label>
-                    <label class="">
-                        <input type="radio" class="me-2 ms-4" name="" id="" autocomplete="off"> Viernes
+                    <label class="radio">
+                        <input type="radio" class="me-2 ms-4 " name="" id="" autocomplete="off"> Viernes
                     </label>
                 </div>
             </div>
             <div class="w-100">
                 <div class="btn-group" data-bs-toggle="buttons">
-                    <label class="me-4">
-                        <input type="radio" class="me-2" name="" id="" autocomplete="off"> Martes
+                    <label class="me-4 radio">
+                        <input type="radio" class="me-2 " name="" id="" autocomplete="off"> Martes
                     </label>
-                    <label class="ms-3">
-                        <input type="radio" class="me-2 ms-4" name="" id="" autocomplete="off"> Sábado
-                    </label>
-                </div>
-            </div>
-            <div class="w-100">
-                <div class="btn-group" data-bs-toggle="buttons">
-                    <label class="">
-                        <input type="radio" class="me-2" name="" id="" autocomplete="off">  Miércoles
-                    </label>
-                    <label class="ms-5">
-                        <input type="radio" class="me-2 ms-n1" name="" id="" autocomplete="off"> Domingo
+                    <label class="ms-3 radio">
+                        <input type="radio" class="me-2 ms-4 " name="" id="" autocomplete="off"> Sábado
                     </label>
                 </div>
             </div>
             <div class="w-100">
                 <div class="btn-group" data-bs-toggle="buttons">
-                    <label class="">
+                    <label class="radio">
+                        <input type="radio" class="me-2 " name="" id="" autocomplete="off">  Miércoles
+                    </label>
+                    <label class="ms-4 radio">
+                        <input type="radio" class="me-2 ms-3 " name="" id="" autocomplete="off"> Domingo
+                    </label>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="btn-group" data-bs-toggle="buttons">
+                    <label class="radio">
                         <input type="radio" class="me-2" name="" id="" autocomplete="off">  Jueves
                     </label>
                 </div>
