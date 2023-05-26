@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use Exception;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -82,6 +83,13 @@ class CoursesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            $course = Course::find($id);
+            $course->destroy($id);
+            return redirect(route('cursos.index'));
+        } catch (Exception $th) {
+            $error = ['name'=>'500', 'des'=>'No se puede borrar este curso, ya que algun registro depende de este curso'];
+            return view('error', compact('error'));
+        }
     }
 }
