@@ -13,4 +13,5 @@ class Areas extends Model
     {
         return $this->hasMany(Profile::class,'id');
     }
+    
 }

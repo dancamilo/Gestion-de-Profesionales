@@ -55,8 +55,8 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
-                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
-                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>
+                    <a href="{{route('cursos.index')}}" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
+                    <a href="{{route('profesionales.index')}}" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>
                     <a href="#" class="nav-item nav-link"><i class="fa-solid fa-address-book"></i></a>
                     <a href="form.html" class="nav-item nav-link"><i class="fa-solid fa-door-open"></i></a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa-solid fa-building"></i><a>

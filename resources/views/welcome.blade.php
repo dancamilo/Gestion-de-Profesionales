@@ -34,11 +34,11 @@
     <div class="row mt-4 row-home w-100v">
         <div class="col-4 mx-4" id="module1">
             <p class="display-6 mb-5">Cursos</p>
-            <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="#" role="button">Ir a Cursos<i class="fa-solid fa-arrow-right"></i></a>
+            <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('cursos.index')}}" role="button">Ir a Cursos<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="col-4 mx-4" id="module2">
             <p class="display-6 mb-5">Profesionales</p>
-            <a name="" id="" class="btn btn-home btn-primary align-self-end float-end mt-5" href="#" role="button">Ir a Profesionales<i class="fa-solid fa-arrow-right"></i></a>
+            <a name="" id="" class="btn btn-home btn-primary align-self-end float-end mt-5" href="{{route('profesionales.index')}}" role="button">Ir a Profesionales<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="col-4 mx-4 text-white" id="module3">
             <p class="display-6 mb-4">Procesos de cursos</p>

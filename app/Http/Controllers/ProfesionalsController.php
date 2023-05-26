@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profesionals;
 use Illuminate\Http\Request;
 
 class ProfesionalsController extends Controller
@@ -13,7 +14,8 @@ class ProfesionalsController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('profesionales.index');
     }
 
     /**

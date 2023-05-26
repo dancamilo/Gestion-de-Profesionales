@@ -16,6 +16,8 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('perfil');
+            $table->foreignId('id_areas')->constrained('areas');
+            $table->foreignId('id_profesionals')->constrained('profesionals');
             $table->timestamps();
         });
     }

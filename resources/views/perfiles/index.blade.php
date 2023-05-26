@@ -34,11 +34,11 @@
                     <div class="ms-0 border-left2 d-flex position-relative">
                         <div class="p-4">
                             <h3 class="mt-2">{{$profile->perfil}}</h3>
-                            <h5 class="mt-3">{{$profile->id_area}}</h5>
+                            <h5 class="mt-3">{{$profile->Areas->name}}</h5>
                         </div>
                         <div class="ms-5 mt-4 w-25">
                             <a href="{{route('perfiles.update', $profile->id)}}"><i class="fa-solid fa-pen ms-4 me-4"></i></a>
-                            <a href="{{route('perfiles.delete', $profile->id)}}"><i class="fa-solid fa-folder text-danger"></i></a>
+                            <a href="#"><i class="fa-solid fa-folder text-danger"></i></a>
                         </div>
                     </div>
                     <hr class="my-2">

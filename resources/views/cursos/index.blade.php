@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="m-0 container w-100v">
+    <div class="ms-5 container w-100v">
         <div class="row ms-5 p-0">
             <div class="col-sm-12 col-md-6">
                 <div class="mt-5">
@@ -28,7 +28,7 @@
                                 <div class=" border-left2  position-relative d-flex ">
                                     <div class="w-100 p-4 pt-3">
                                         <h3>{{$course->nombre}}</h3>
-                                        <h6>{{$course->id_profesionals}}</h6>
+                                        <h6>{{$course->Profesionals->nombre}}</h6>
                                         <div class="progress">
                                             <div class="progress-bar bg-success" style="width:80%">80%</div>
                                         </div>
@@ -38,11 +38,10 @@
                                         <p class="mt-3" >Horas Restantes</p>
                                     </div>
                                     <div class="d-flex">
-                                        <button type="submit" class="text-primary buttons-crud h-25"><i class="fa-solid fa-pen"></i></button>
+                                        <button type="submit" href="{{route('cursos.update', $course->id)}}" class="text-primary buttons-crud h-25"><i class="fa-solid fa-pen me-4"></i></button>
                                         <form action="{{route('cursos.destroy', $course->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            
                                             <button type="submit" class="text-danger buttons-crud"><i class="fa-solid fa-trash-can ms-n4"></i></button>
                                         </form>
                                     </div>
