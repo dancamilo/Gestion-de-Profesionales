@@ -30,8 +30,29 @@ body{
     visibility: visible;
     opacity: 1;
 }
-
-
+a{
+    color: #0E1F87;
+}
+a:hover{
+    color: darkblue;
+}
+a i:hover{
+    color: darkblue;
+    text-decoration: none;
+}
+.btn:focus{
+    background-color: darkblue;
+    border: none;
+    box-shadow: none;
+}
+.form-control{
+    background-color: white;
+}
+.form-control:focus{
+    background-color: white;
+    box-shadow: none;
+    border:1px inset #0E1F87;
+}
 /*** Button ***/
 .btn {
     transition: .5s;

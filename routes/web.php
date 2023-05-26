@@ -53,7 +53,3 @@ Route::get('/historial/usuarios', function () {return view('historiales.usuarios
 Route::get('/historial/certificados', function () {return view('historiales.certificados');});
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profesionales', function () {return view('profesionales.profesionales');});
-Route::get('/empresas', function () {return view('empresas.empresas');});
-Route::get('/informacionPersonal', function () {return view('informacionPersonal.informacionPersonal');});
-Route::get('/profesionales', function(){return view('equipoR.profesionales');});
