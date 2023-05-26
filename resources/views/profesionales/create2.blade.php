@@ -61,95 +61,25 @@
     </head>
     <body>
         <h1>Subir archivos PDF</h1>
-        <form action="ruta_del_script_de_procesamiento.php" method="POST" enctype="multipart/form-data">
-            <div class="image-upload-wrap">
-                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".pdf" name="file" />
-                <div class="drag-text">
-                <h3>Selecciona el Documento a subir</h3>
-                </div>
-            </div>
-            <div class="image-upload-wrap">
-                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".pdf" name="file" />
-                <div class="drag-text">
-                <h3>Selecciona el Documento a subir</h3>
-                </div>
-            </div>
-            <div class="image-upload-wrap">
-                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".pdf" name="file" />
-                <div class="drag-text">
-                <h3>Selecciona el Documento a subir</h3>
-                </div>
-            </div>
-            <div class="file-upload-content">
-                <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
-                <div class="image-title-wrap">
-                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                </div>
-              </div>
-              <div class="file-upload-content">
-                <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
-                <div class="image-title-wrap">
-                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                </div>
-              </div>
-              <div class="file-upload-content">
-                <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
-                <div class="image-title-wrap">
-                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                </div>
-              </div>
+        <form action="{{route('download')}}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="mb-3 mt-5">
+            <label for="formFileSm" class="form-label text-dark">Cuenta Bancaria</label>
+            <input class="form-control form-control-lg bg-dark" id="formFile" accept=".pdf" type="file" name="CB" required>
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label text-dark">Hoja de Vida</label>
+            <input class="form-control form-control-lg bg-dark" id="formFile" accept=".pdf" type="file" name="CV" required>
+        </div>
+        <div class="mb-3">
+            <label for="formFileSm" class="form-label text-dark">Certificado de EPS</label>
+            <input class="form-control form-control-lg bg-dark" id="formFile" accept=".pdf" type="file" name="EPS" required>
+        </div>
             <input type="submit" value="Subir archivos">
         </form>
         
       </div>
     </div>
   </div>
-  <script>
-    function readURL(input) {
-if (input.files && input.files[0]) {
-
-var reader = new FileReader();
-
-reader.onload = function(e) {
-  $('.image-upload-wrap').hide();
-
-  $('#image1').attr('src', "{{asset('img/pdf.png')}}");
-  $('#file-upload-content1
-  
-  
-  ').show();
-
-  $('.image-title').html(input.files[0].name);
-};
-
-reader.readAsDataURL(input.files[0]);
-
-} else {
-removeUpload();
-}
-}
-
-function removeUpload() {
-$('.file-upload-input').replaceWith($('.file-upload-input').clone());
-$('.file-upload-content').hide();
-$('.image-upload-wrap').show();
-}
-$('.image-upload-wrap').bind('dragover', function () {
-$('.image-upload-wrap').addClass('image-dropping');
-});
-$('.image-upload-wrap').bind('dragleave', function () {
-$('.image-upload-wrap').removeClass('image-dropping');
-});
-function showFileNames() {
-      var fileInput = document.getElementById('fileInput');
-      var fileNames = document.getElementById('fileNames');
-      fileNames.innerHTML = '';
-
-      for (var i = 0; i < fileInput.files.length; i++) {
-        var fileName = document.createElement('li');
-        fileName.textContent = fileInput.files[i].name;
-        fileNames.appendChild(fileName);
-      }
-    }
-</script>
+ 
 @endsection

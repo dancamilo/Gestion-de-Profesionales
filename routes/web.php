@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\ProfilesController;
+use App\Http\Controllers\ProfesionalsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/cursos', CoursesController::class)->names('cursos');
 Route::resource('/perfiles', ProfilesController::class)->names('perfiles');
+Route::resource('/profesionals', ProfesionalsController::class)->names('profesionals');
 Route::get('/profesionales', function () {return view('profesionales.index');});
 Route::get('/profesionales/create', function () {return view('profesionales.create');});
 Route::get('/profesionales/create/2', function () {return view('profesionales.create2');});
@@ -53,3 +55,6 @@ Route::get('/historial/usuarios', function () {return view('historiales.usuarios
 Route::get('/historial/certificados', function () {return view('historiales.certificados');});
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::post('/download', [ProfesionalsController::class, 'download'])->name('download');
