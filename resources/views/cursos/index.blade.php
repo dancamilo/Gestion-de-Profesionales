@@ -37,11 +37,13 @@
                                         <h1>{{$course->duracion}}</h1>
                                         <p class="mt-3" >Horas Restantes</p>
                                     </div>
-                                    <div>
+                                    <div class="d-flex">
+                                        <button type="submit" class="text-primary buttons-crud h-25"><i class="fa-solid fa-pen"></i></button>
                                         <form action="{{route('cursos.destroy', $course->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-danger button-delete"><i class="fa-solid fa-trash-can ms-n4"></i></button>
+                                            
+                                            <button type="submit" class="text-danger buttons-crud"><i class="fa-solid fa-trash-can ms-n4"></i></button>
                                         </form>
                                     </div>
                                 </div>

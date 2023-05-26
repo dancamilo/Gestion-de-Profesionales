@@ -719,6 +719,9 @@ input[type=radio]{
 .fa-tiktok{
     text-shadow: 1px 2px 0px red, -1px -1px 0px deepskyblue;
 }
+.fa-pen{
+    color: #0E1F87;
+}
 h5{
     font-weight: lighter;
 }
@@ -726,10 +729,10 @@ h5{
     text-align: justify;
     width: 85%;
 }
-.fa-trash-can{
-    font-size: 21.5px;
+.fa-trash-can, .fa-pen{
+    font-size: 19px;
 }
-.fa-pen, .fa-folder, .fa-minus, .fa-square-minus{
+.fa-folder, .fa-minus, .fa-square-minus{
     font-size: 24px;
 }
 .fa-user-plus{
@@ -835,7 +838,7 @@ transition: all .2s ease;
 .radio{
     font-size: 20px;
 }
-.button-delete, .button-delete:hover{
+.buttons-crud, .buttons-crud:hover{
     background: none;
     width: 3vw;
 }
