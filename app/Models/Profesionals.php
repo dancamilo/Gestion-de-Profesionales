@@ -13,4 +13,8 @@ class Profesionals extends Model
     {
         return $this->hasMany(Course::class,'id');
     }
+    public function Profile()
+    {
+        return $this->hasMany(Profile::class,'id');
+    }
 }

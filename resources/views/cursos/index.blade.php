@@ -34,11 +34,12 @@
                                 <p class="mt-3" >Horas Restantes</p>
                             </div>
                         </div>
-                        <a class=" btn btn-danger" href="#
-                        
-                        
-                        " role="button">Eliminar</a>
-                        <a class="btn btn-primary" href="{{route('cursos.show', $course->id)}}" role="button">Detalles</a>
+                            <a class="btn btn-primary" href="{{route('cursos.show', $course->id)}}" role="button">Detalles</a>
+                            <form action="{{route('cursos.destroy', $course->id)}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                            </form>
                         </div>
                     @endforeach
 

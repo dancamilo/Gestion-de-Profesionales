@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
-use Exception;
 use Illuminate\Http\Request;
-
-class CoursesController extends Controller
+class AreasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +12,7 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        $courses = Course::all();
-        return view('cursos.index', compact('courses'));
+
     }
 
     /**
@@ -26,7 +22,7 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        return view ('cursos.create');
+
     }
 
     /**
@@ -48,8 +44,7 @@ class CoursesController extends Controller
      */
     public function show($id)
     {
-        $course = Course::find($id);
-        return view('cursos.show', compact('course'));
+        //
     }
 
     /**
@@ -83,13 +78,6 @@ class CoursesController extends Controller
      */
     public function destroy($id)
     {
-        try {
-            $course = Course::find($id);
-            $course->destroy($id);
-            return redirect(route('cursos.index'));
-        } catch (Exception $th) {
-            $error = ['name'=>'500', 'des'=>'No se puede borrar este curso, ya que algun registro depende de este curso'];
-            return view('error', compact('error'));
-        }
+        //
     }
 }
