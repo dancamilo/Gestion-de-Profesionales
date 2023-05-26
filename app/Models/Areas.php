@@ -17,4 +17,5 @@ class Areas extends Model
     {
         return $this->belongsTo(profesionals::class,'id_profesionals');
     }
+    
 }
