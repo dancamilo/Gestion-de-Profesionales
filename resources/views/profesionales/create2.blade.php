@@ -68,7 +68,31 @@
                 <h3>Selecciona el Documento a subir</h3>
                 </div>
             </div>
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".pdf" name="file" />
+                <div class="drag-text">
+                <h3>Selecciona el Documento a subir</h3>
+                </div>
+            </div>
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept=".pdf" name="file" />
+                <div class="drag-text">
+                <h3>Selecciona el Documento a subir</h3>
+                </div>
+            </div>
             <div class="file-upload-content">
+                <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
+                <div class="image-title-wrap">
+                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                </div>
+              </div>
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
+                <div class="image-title-wrap">
+                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                </div>
+              </div>
+              <div class="file-upload-content">
                 <img class="file-upload-image" src="{{asset('img/pdf.png')}}" alt="your image" />
                 <div class="image-title-wrap">
                   <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
@@ -89,8 +113,11 @@ var reader = new FileReader();
 reader.onload = function(e) {
   $('.image-upload-wrap').hide();
 
-  $('.file-upload-image').attr('src', "{{asset('img/pdf.png')}}");
-  $('.file-upload-content').show();
+  $('#image1').attr('src', "{{asset('img/pdf.png')}}");
+  $('#file-upload-content1
+  
+  
+  ').show();
 
   $('.image-title').html(input.files[0].name);
 };
