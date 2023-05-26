@@ -112,5 +112,16 @@ $('.image-upload-wrap').addClass('image-dropping');
 $('.image-upload-wrap').bind('dragleave', function () {
 $('.image-upload-wrap').removeClass('image-dropping');
 });
+function showFileNames() {
+      var fileInput = document.getElementById('fileInput');
+      var fileNames = document.getElementById('fileNames');
+      fileNames.innerHTML = '';
+
+      for (var i = 0; i < fileInput.files.length; i++) {
+        var fileName = document.createElement('li');
+        fileName.textContent = fileInput.files[i].name;
+        fileNames.appendChild(fileName);
+      }
+    }
 </script>
 @endsection

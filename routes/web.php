@@ -49,4 +49,3 @@ Route::get('/historial/empresas', function () {return view('historiales.empresas
 Route::get('/historial/empresas/show', function () {return view('historiales.empresas.show');});
 Route::get('/historial/usuarios', function () {return view('historiales.usuarios');});
 Route::get('/historial/certificados', function () {return view('historiales.certificados');});
-Route::get('/historial/create/2', function () {return view('perfiles');});
