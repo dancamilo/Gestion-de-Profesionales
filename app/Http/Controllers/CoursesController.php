@@ -79,7 +79,7 @@ class CoursesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('cursos.edit');
     }
 
     /**
@@ -91,7 +91,7 @@ class CoursesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return view('cursos,update');
+        return view('cursos.update');
     }
 
     /**

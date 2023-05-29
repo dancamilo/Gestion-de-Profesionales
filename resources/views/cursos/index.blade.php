@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="ms-5 container w-100v">
-        <div class="row ms-5 p-0">
+        <div class="row p-0">
             <div class="col-sm-12 col-md-6">
                 <div class="mt-5">
                     <h2>Cursos</h2><hr class="hr mb-5">
@@ -37,8 +37,9 @@
                                         <h1>{{$course->duracion}}</h1>
                                         <p class="mt-3" >Horas Restantes</p>
                                     </div>
+                                    <button type="submit" href="{{route('cursos.edit', $course->id)}}" class="text-primary buttons-crud h-25"><i class="fa-solid fa-pen me-4"></i>
+                                    </button>
                                     <div class="d-flex">
-                                        <button type="submit" href="{{route('cursos.update', $course->id)}}" class="text-primary buttons-crud h-25"><i class="fa-solid fa-pen me-4"></i></button>
                                         <form action="{{route('cursos.destroy', $course->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')

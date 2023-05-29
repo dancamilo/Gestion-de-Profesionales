@@ -59,11 +59,11 @@
             </div>
             <div class="col-4 mx-4" id="module5">
                 <p class="display-6 mb-5">Acceso de usuarios</p>
-                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="#" role="button">Ir a Usuarios<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('usuarios.index')}}" role="button">Ir a Usuarios<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="col-4 mx-4 " id="module6">
                 <p class="display-6 mb-5">Empresas</p>
-                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="#" role="button">Ir a Empresas<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="{{route('empresas.index')}}" role="button">Ir a Empresas<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <div class="row mt-4 row-home w-100v">
@@ -73,7 +73,7 @@
             </div>
             <div class="col-4 mx-4" id="module8">
                 <p class="display-6 mb-5">Historial</p>
-                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="#" role="button">Ir a Historial<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="{{route('historiales.index')}}" role="button">Ir a Historial<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             
             <div class="col-4 mx-4 text-white text-center" id="module9">

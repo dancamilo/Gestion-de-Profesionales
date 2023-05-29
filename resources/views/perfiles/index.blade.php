@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container ms-5">
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <div class="mt-5">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="d-flex">
+    <div class="d-flex flex-wrap">
         @foreach ($profiles as $profile)
         <a href="{{route('perfiles.show', $profile->id)}}">
             <div class="mt-5 me-5">
