@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -32,5 +33,17 @@ class DatabaseSeeder extends Seeder
         \App\Models\Course::factory(5)->create();
         \App\Models\Works::factory(5)->create();
         \App\Models\Certifications::factory(5)->create();
+        \App\Models\User::factory()->create([
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('admin1234'),
+            'id_rols' => 'Educación Contínua',
+        ]);
+        \App\Models\User::factory()->create([
+            'name' => 'rela',
+            'email' => 'rela@gmail.com',
+            'password' => Hash::make('admin1234'),
+            'id_rols' => 'Relacionamiento',
+        ]);
     }
 }

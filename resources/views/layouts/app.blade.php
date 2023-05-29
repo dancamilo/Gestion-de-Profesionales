@@ -86,7 +86,16 @@
                             <span class="d-none d-lg-inline-flex">Cerrar sesión</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">Cerrar sesión</a>
+
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                             {{ __('Cerrar Sesión') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </div>
                     </div>
                 </div>
