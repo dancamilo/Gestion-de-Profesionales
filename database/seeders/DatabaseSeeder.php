@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \App\Models\Rol::factory()->create([
+            'rol' => 'Educación Contínua'
+        ]);
+        \App\Models\Rol::factory()->create([
+            'rol' => 'Relacionamiento'
+        ]);
         \App\Models\User::factory(10)->create();
         \App\Models\TypeDocs::factory()->create([
             'type' => 'tarjeta de identidad'
@@ -26,8 +32,5 @@ class DatabaseSeeder extends Seeder
         \App\Models\Course::factory(5)->create();
         \App\Models\Works::factory(5)->create();
         \App\Models\Certifications::factory(5)->create();
-       
-    
-
     }
 }
