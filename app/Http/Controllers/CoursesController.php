@@ -20,7 +20,7 @@ class CoursesController extends Controller
     public function index()
     {
         $courses = Course::all();
-        return view('cursos.index', compact('courses'));
+        return view('users.courses_index', compact('courses'));
     }
 
     /**
@@ -33,7 +33,7 @@ class CoursesController extends Controller
         $profiles = Profiles::all();
         $profesionals = Profesionals::all();
         $companies = Companies::all();
-        return view ('cursos.create',compact('profiles','profesionals', 'companies'));
+        return view ('users.courses_create',compact('profiles','profesionals', 'companies'));
     }
 
     /**
@@ -56,7 +56,7 @@ class CoursesController extends Controller
         $course ->id_companies = $request->id_companies;
 
         $course->save();
-        return redirect(route('cursos.index')) ;
+        return redirect(route('courses.index')) ;
     }
 
     /**
@@ -67,8 +67,8 @@ class CoursesController extends Controller
      */
     public function show($id)
     {
-        $course = Course::find($id);
-        return view('cursos.show', compact('course'));
+        // $course = Course::find($id);
+        // return view('courses.show', compact('course'));
     }
 
     /**
@@ -79,7 +79,7 @@ class CoursesController extends Controller
      */
     public function edit($id)
     {
-        return view('cursos.edit');
+        return view('#');
     }
 
     /**
@@ -91,7 +91,7 @@ class CoursesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return view('cursos.update');
+        // return view('courses.update');
     }
 
     /**
@@ -105,7 +105,7 @@ class CoursesController extends Controller
         try {
             $course = Course::find($id);
             $course->destroy($id);
-            return redirect(route('cursos.index'));
+            return redirect(route('courses.index'));
         } catch (Exception $th) {
             $error = ['name'=>'500', 'des'=>'No se puede borrar este curso, ya que algun registro depende de este curso'];
             return view('error', compact('error'));

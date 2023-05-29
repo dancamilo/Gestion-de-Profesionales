@@ -14,8 +14,7 @@ class ProfesionalsController extends Controller
      */
     public function index()
     {
-
-        return view('profesionales.index');
+        return view('users.prof_index');
     }
 
     /**

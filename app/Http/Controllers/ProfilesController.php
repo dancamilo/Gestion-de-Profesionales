@@ -15,7 +15,7 @@ class ProfilesController extends Controller
     public function index()
     {
         $profiles = Profiles::all();
-        return view('perfiles.index', compact('profiles'));
+        return view('users.perf_index', compact('profiles'));
     }
 
     /**
@@ -25,7 +25,7 @@ class ProfilesController extends Controller
      */
     public function create()
     {
-        return view ('perfiles.create');
+        return view ('users.perf_create');
     }
 
     /**

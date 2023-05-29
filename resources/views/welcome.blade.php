@@ -34,11 +34,11 @@
     <div class="row mt-4 row-home w-100v">
         <div class="col-4 mx-4" id="module1">
             <p class="display-6 mb-5">Cursos</p>
-            <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('cursos.index')}}" role="button">Ir a Cursos<i class="fa-solid fa-arrow-right"></i></a>
+            <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('courses.index')}}" role="button">Ir a Cursos<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="col-4 mx-4" id="module2">
             <p class="display-6 mb-5">Profesionales</p>
-            <a name="" id="" class="btn btn-home btn-primary align-self-end float-end mt-5" href="{{route('profesionales.index')}}" role="button">Ir a Profesionales<i class="fa-solid fa-arrow-right"></i></a>
+            <a name="" id="" class="btn btn-home btn-primary align-self-end float-end mt-5" href="{{route('professionals.index')}}" role="button">Ir a Profesionales<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="col-4 mx-4 text-white" id="module3">
             <p class="display-6 mb-4">Procesos de cursos</p>
@@ -59,21 +59,21 @@
             </div>
             <div class="col-4 mx-4" id="module5">
                 <p class="display-6 mb-5">Acceso de usuarios</p>
-                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('usuarios.index')}}" role="button">Ir a Usuarios<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('profiles.index')}}" role="button">Ir a Usuarios<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="col-4 mx-4 " id="module6">
                 <p class="display-6 mb-5">Empresas</p>
-                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="{{route('empresas.index')}}" role="button">Ir a Empresas<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="{{route('users.index')}}" role="button">Ir a Empresas<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
           <div class="row mt-4 row-home w-100v">
             <div class="col-4 mx-4 " id="module7">
                 <p class="display-6 mb-5">Certificados</p>
-                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="#" role="button">Ir a Certificados<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home2 btn-primary float-end mt-5" href="{{route('companies.index')}}" role="button">Ir a Certificados<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="col-4 mx-4" id="module8">
                 <p class="display-6 mb-5">Historial</p>
-                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="{{route('historiales.index')}}" role="button">Ir a Historial<i class="fa-solid fa-arrow-right"></i></a>
+                <a name="" id="" class="btn btn-home btn-primary float-end mt-5" href="#" role="button">Ir a Historial<i class="fa-solid fa-arrow-right"></i></a>
             </div>
             
             <div class="col-4 mx-4 text-white text-center" id="module9">
