@@ -24,19 +24,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('users.welcome');
-        // $user=Auth::user();
-        // switch ($user->rols->rol) {
-        //     case 'Educación Contínua':
-        //         return view('users.welcome');
-        //         break;
-        //     case 'relacionamiento':
-        //         return redirect(route(''));
-        //         break;
-        //     default:
-        //         $error =['name'=>'423', 'desc'=>"No tienes el rol adecuado"];
-        //         return view('error', compact('error'));
-        //         break;
-        // }
+        $user=Auth::user();
+        switch ($user->rols->rol) {
+            case 'Educación Contínua':
+                return view('users.welcome');
+                break;
+            case 'relacionamiento':
+                return redirect(route(''));
+                break;
+            default:
+                $error =['name'=>'423', 'desc'=>"No tienes el rol adecuado"];
+                return view('error', compact('error'));
+                break;
+        }
     }
 }

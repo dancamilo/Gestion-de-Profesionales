@@ -36,14 +36,14 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
-            'password' => Hash::make('admin1234'),
-            'id_rols' => 'Educación Contínua',
+            'password' => Hash::make('admin123'),
+            'id_rols' => '1',
         ]);
         \App\Models\User::factory()->create([
             'name' => 'rela',
             'email' => 'rela@gmail.com',
-            'password' => Hash::make('admin1234'),
-            'id_rols' => 'Relacionamiento',
+            'password' => Hash::make('admin123'),
+            'id_rols' => '2',
         ]);
     }
 }
