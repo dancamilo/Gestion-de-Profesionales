@@ -28,25 +28,29 @@
     </div>
     <div class="d-flex">
         <div class="mt-5">
+            @foreach($companies as $company)
             <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0">
                 <div class="ms-0 border-left2 d-flex position-relative">
+                            
                             <div class="p-4">
-                                <h3>Empresa 1</h3>
-                                <h5>Dirección</h5>
-                                <h5>Rut:12345678</h5>
-                            </div>
+                                <h3>{{$company->nombre}}</h3>
+                                <h5>{{$company->direccion}}</h5>
+                                <h5>Rut: {{$company->rut}}</h5>
+                            </div>                                
                             <div>
                                 <img class="rounded-circle mt-4 h-50" src="{{asset('img/Empresa1.jpg')}}" alt="">
                             </div>
                         </div>
                         <hr class="my-2">
                     </div>
+                    @endforeach
+                    @foreach($profesionals as $profesional)
                     <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0 mt-n2">
                         <div class="ms-0 border-left2 d-flex position-relative">
                             <div class="p-4">
-                                <h3>Contacto empresa</h3>
-                                <h5>Cargo</h5>
-                                <a href="#">nombre@uniempresarial.edu.co</a>   
+                                <h3>{{$profesional->nombre}}</h3>
+                                <h5>{{$profesional->titulo}}</h5>
+                                <a href="#">nombre@uniempresarial.edu.co</a>
                             </div>
                             <div>
                                 <img class="rounded-circle mt-4 h-50" src="{{asset('img/User1.jpg')}}" alt="">
@@ -55,7 +59,8 @@
                         <hr class="my-2">
                     </div>
             </div>
-            <div class="mt-5 ms-5">
+            @endforeach 
+            {{-- <div class="mt-5 ms-5">
                 <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0">
                     <div class="ms-0 border-left2 d-flex position-relative">
                         <div class="p-4">
@@ -141,6 +146,6 @@
                     <hr class="my-2">
                 </div>
             </div>
-        </div>
+        </div> --}}
 </div>
 @endsection

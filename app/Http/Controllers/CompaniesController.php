@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Companies;
+use App\Models\Profesionals;
 use Illuminate\Http\Request;
 
 class CompaniesController extends Controller
@@ -13,7 +15,9 @@ class CompaniesController extends Controller
      */
     public function index()
     {
-        return view('users.emp_index');
+        $companies = Companies::all();
+        $profesionals = Profesionals::all();
+        return view('users.emp_index', compact('companies','profesionals'));
     }
 
     /**
