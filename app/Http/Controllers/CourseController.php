@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Profiles;
 use App\Models\Course;
-use App\Models\Profesionals;
-use App\Models\Companies;
-
+use App\Models\Company;
+use App\Models\Profesional;
+use App\Models\Profile;
 use Exception;
 use Illuminate\Http\Request;
 
-class CoursesController extends Controller
+class CourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -30,9 +29,9 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        $profiles = Profiles::all();
-        $profesionals = Profesionals::all();
-        $companies = Companies::all();
+        $profiles = Profile::all();
+        $profesionals = Profesional::all();
+        $companies = Company::all();
         return view ('users.courses_create',compact('profiles','profesionals', 'companies'));
     }
 

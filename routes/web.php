@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\CoursesController;
-use App\Http\Controllers\ProfilesController;
-use App\Http\Controllers\ProfesionalsController;
-use App\Http\Controllers\UsersController;
-use App\Http\Controllers\CompaniesController;
-use App\Http\Controllers\HistorialsController;
-use App\Models\Profesionals;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfesionalController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\HistorialController;
+use App\Models\Profesional;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -30,10 +30,10 @@ Route::get('/prueba', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::resource('/courses', CoursesController::class)->names('courses');
-Route::resource('/professionals', ProfesionalsController::class)->names('professionals');
-Route::resource('/profiles', ProfilesController::class)->names('profiles');
-Route::resource('/users', UsersController::class)->names('users');
-Route::resource('/companies', CompaniesController::class)->names('companies');
+Route::resource('/courses', CourseController::class)->names('courses');
+Route::resource('/professionals', ProfesionalController::class)->names('professionals');
+Route::resource('/profiles', ProfileController::class)->names('profiles');
+Route::resource('/users', UserController::class)->names('users');
+Route::resource('/companies', CompanyController::class)->names('companies');
 
 

@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TypeDocs extends Model
+class Profesional extends Model
 {
     use HasFactory;
-    protected $table="type_docs";
 
-    public function TypeDocs()
+    public function Profesional()
     {
-        return $this->hasMany(TypeDocs::class,'id');
+        return $this->hasMany(Profesional::class,'id');
     }
 }

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-class AreasController extends Controller
+
+class DocumentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,7 +13,7 @@ class AreasController extends Controller
      */
     public function index()
     {
-
+        //
     }
 
     /**
@@ -22,7 +23,7 @@ class AreasController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**

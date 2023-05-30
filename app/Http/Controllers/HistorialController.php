@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Profesionals;
 use Illuminate\Http\Request;
 
-class ProfesionalsController extends Controller
+class HistorialController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class ProfesionalsController extends Controller
      */
     public function index()
     {
-        return view('users.prof_index');
+       
     }
 
     /**
@@ -81,10 +80,5 @@ class ProfesionalsController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function download(Request $request)
-    {
-        return $request;
     }
 }

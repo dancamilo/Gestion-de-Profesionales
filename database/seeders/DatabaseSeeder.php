@@ -21,18 +21,18 @@ class DatabaseSeeder extends Seeder
             'rol' => 'Relacionamiento'
         ]);
         \App\Models\User::factory(10)->create();
-        \App\Models\TypeDocs::factory()->create([
+        \App\Models\TypeDoc::factory()->create([
             'type' => 'tarjeta de identidad'
         ]);
-        \App\Models\Companies::factory(5)->create();
-        \App\Models\Contacts::factory(5)->create();
-        \App\Models\Profesionals::factory(5)->create();
-        \App\Models\Documents::factory(5)->create();
-        \App\Models\Profiles::factory(5)->create();
-        \App\Models\Areas::factory(5)->create();
+        \App\Models\Company::factory(5)->create();
+        \App\Models\Contact::factory(5)->create();
+        \App\Models\Profesional::factory(5)->create();
+        \App\Models\Document::factory(5)->create();
+        \App\Models\Profile::factory(5)->create();
+        \App\Models\Area::factory(5)->create();
         \App\Models\Course::factory(5)->create();
-        \App\Models\Works::factory(5)->create();
-        \App\Models\Certifications::factory(5)->create();
+        \App\Models\Work::factory(5)->create();
+        \App\Models\Certification::factory(5)->create();
         \App\Models\User::factory()->create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',

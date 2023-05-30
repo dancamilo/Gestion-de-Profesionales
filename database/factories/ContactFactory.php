@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
 
-class ProfesionalsFactory extends Factory
+class ContactFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,11 +16,11 @@ class ProfesionalsFactory extends Factory
     {
         return [
             'nombre' => $this->faker->name(),
+            'numero' => $this->faker->phoneNumber(),
             'email' => $this->faker->unique()->safeEmail(),
-            'telefono' => $this->faker->phoneNumber(),
-            'titulo' => $this->faker->jobTitle(),
+            'area' => $this->faker->jobTitle(),
+            'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),
             
-
         ];
     }
 }

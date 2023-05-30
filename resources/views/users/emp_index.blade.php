@@ -27,11 +27,10 @@
         </div>
     </div>
     <div class="d-flex">
+        @foreach($companies as $company)
         <div class="mt-5">
-            @foreach($companies as $company)
             <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0">
                 <div class="ms-0 border-left2 d-flex position-relative">
-                            
                             <div class="p-4">
                                 <h3>{{$company->nombre}}</h3>
                                 <h5>{{$company->direccion}}</h5>
@@ -43,14 +42,14 @@
                         </div>
                         <hr class="my-2">
                     </div>
-                    @endforeach
-                    @foreach($profesionals as $profesional)
                     <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0 mt-n2">
                         <div class="ms-0 border-left2 d-flex position-relative">
                             <div class="p-4">
-                                <h3>{{$profesional->nombre}}</h3>
-                                <h5>{{$profesional->titulo}}</h5>
-                                <a href="#">nombre@uniempresarial.edu.co</a>
+                                @if($company->contact)
+                                    <h3>{{$company->contact->nombre}}</h3>
+                                    <h5>{{$company->contact->area}}</h5>
+                                    <a href="#">{{$company->contact->email}}</a>
+                                @endif
                             </div>
                             <div>
                                 <img class="rounded-circle mt-4 h-50" src="{{asset('img/User1.jpg')}}" alt="">
@@ -59,7 +58,7 @@
                         <hr class="my-2">
                     </div>
             </div>
-            @endforeach 
+            
             {{-- <div class="mt-5 ms-5">
                 <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0">
                     <div class="ms-0 border-left2 d-flex position-relative">
@@ -147,5 +146,6 @@
                 </div>
             </div>
         </div> --}}
+        @endforeach 
 </div>
 @endsection

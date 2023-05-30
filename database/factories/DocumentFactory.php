@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
 
-class AreasFactory extends Factory
+class DocumentFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,9 +14,11 @@ class AreasFactory extends Factory
      */
     public function definition()
     {
+        
         return [
-            'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
-            'id_profiles' => $this->faker->randomElement(DB::table('profiles')->pluck('id')),
+         'id_typedocs' => $this->faker->randomElement(DB::table('type_docs')->pluck('id')),
+         'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
         ];
+    
     }
 }

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Profiles;
+use App\Models\Company;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class ProfilesController extends Controller
+class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,9 @@ class ProfilesController extends Controller
      */
     public function index()
     {
-        $profiles = Profiles::all();
-        return view('users.perf_index', compact('profiles'));
+        $companies = Company::all();
+        $contacts = Contact::all();
+        return view('users.emp_index', compact('companies','contacts'));
     }
 
     /**
@@ -25,7 +27,7 @@ class ProfilesController extends Controller
      */
     public function create()
     {
-        return view ('users.perf_create');
+        //
     }
 
     /**
