@@ -8,6 +8,7 @@ use App\Models\Profesional;
 use App\Models\Profile;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -53,7 +54,6 @@ class CourseController extends Controller
         $course ->fecha_final = $request->fecha_final;
         $course ->id_profesionals = $request->id_profesionals;
         $course ->id_companies = $request->id_companies;
-
         $course->save();
         return redirect(route('courses.index')) ;
     }
@@ -66,8 +66,8 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        // $course = Course::find($id);
-        // return view('courses.show', compact('course'));
+        $course = Course::find($id);
+        return view('users.courses_show', compact('course'));
     }
 
     /**
@@ -78,7 +78,10 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        return view('#');
+        $courses = Course::find($id);
+        $profesional = Profesional::all();
+        $companies = Company::all();
+        return view('users.courses_edit', compact('courses','profesional','companies'));
     }
 
     /**
@@ -90,7 +93,15 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // return view('courses.update');
+        $course = Course::find($id);
+        $course ->nombre = $request->nombre;
+        $course ->fecha_inicial = $request->fecha_inicial;
+        $course ->fecha_final = $request->fecha_final;
+        $course ->duracion=$request->duracion;
+        $course ->descripcion = $request->descripcion;
+        $course ->observaciones = $request->observaciones;
+        $course->save();
+        return redirect(route('courses.index', $id));
     }
 
     /**

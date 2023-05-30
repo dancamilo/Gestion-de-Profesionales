@@ -4,7 +4,7 @@
 <hr class='mx-5' width="20%" />	
 <div class="d-flex mt-2 mb-5">
     <div class="create-card2 mt-2 ms-5">
-        <form action="{{route('cursos.store')}}"  class="w-70" method="POST">
+        <form action="{{route('courses.store')}}"  class="w-70" method="POST">
         @csrf
             <h3 class="mt-3 ms-4">Nombre del curso:</h3>
             <div class="ms-4 mt-3 w-100">
@@ -14,7 +14,7 @@
             <div class="ms-4 mt-3 w-100">
                 <select name="id_areas" id="" class="text-cursos text-center py-1">
                 <option value="" selected> Seleccione un área</option>
-                    @foreach($profiles as $profil)
+                    @foreach($profiles as $profile)
                     <option value="{{$profile->id}}" selected>{{$profile->perfil}}</option>
                     @endforeach
                 </select>

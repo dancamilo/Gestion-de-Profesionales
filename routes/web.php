@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfesionalController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\HistorialController;
+use App\Http\Controllers\HomeController;
 use App\Models\Profesional;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
