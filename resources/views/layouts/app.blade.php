@@ -54,14 +54,14 @@
                    
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="#" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
-                    <a href="{{route('courses.index')}}" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
-                    <a href="{{route('professionals.index')}}" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>
-                    <a href="{{route('profiles.index')}}" class="nav-item nav-link"><i class="fa-solid fa-address-book"></i></a>
-                    <a href="{{route('users.index')}}" class="nav-item nav-link"><i class="fa-solid fa-door-open"></i></a>
-                    <a href="{{route('companies.index')}}" class="nav-item nav-link"><i class="fa-solid fa-building"></i><a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa-solid fa-file-arrow-up"></i></a>
-                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="nav-item nav-link active" data-bs-toggle="tooltip" title="Home"><i class="fa-solid fa-house"></i></a>
+                    <a href="{{route('courses.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Cursos"><i class="fa-solid fa-graduation-cap"></i></a>   
+                    <a href="{{route('professionals.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Profesionales"><i class="fa-solid fa-user-tie"></i></a>
+                    <a href="{{route('profiles.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Perfiles"><i class="fa-solid fa-address-book"></i></a>
+                    <a href="{{route('users.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Usuarios"><i class="fa-solid fa-door-open"></i></a>
+                    <a href="{{route('companies.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Compañias"><i class="fa-solid fa-building"></i><a>
+                    <a href="chart.html" class="nav-item nav-link" data-bs-toggle="tooltip" title="Certificados"><i class="fa-solid fa-file-arrow-up"></i></a>
+                    <a href="#" class="nav-item nav-link" data-bs-toggle="tooltip" title="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </nav>
         </div>
@@ -106,7 +106,7 @@
 
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 w-100">
+            <footer class="container-fluid pt-4 w-100">
                 <div class="bg-secondary rounded-top p-2 rounded">
                     <div class="row">
                         <div class="col-12 col-sm-6 footer">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        </footer>
             <!-- Footer End -->
         </div>
         <!-- Content End -->
