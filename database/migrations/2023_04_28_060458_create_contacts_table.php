@@ -19,7 +19,6 @@ class CreateContactsTable extends Migration
             $table->string('telephone');
             $table->string('email');
             $table->text('area');
-            $table->foreignId('id_companies')->constrained('companies');
             $table->timestamps();
         });
     }

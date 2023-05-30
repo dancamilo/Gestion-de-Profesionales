@@ -9,8 +9,9 @@ class Contact extends Model
 {
     use HasFactory;
 
-    public function Contact()
+    public function company()
     {
-        return $this->belongsTo(Contact::class, 'id_contacts', 'id');
+        return $this->belongsTo(Company::class, 'id_contacts');
     }
 }
+

@@ -15,9 +15,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $companies = Company::all();
-        $contacts = Contact::all();
-        return view('users.emp_index', compact('companies','contacts'));
+            $companies = Company::with('contacts')->get();
+            //dd($companies);
+            return view('users.emp_index', compact('companies'));
     }
 
     /**

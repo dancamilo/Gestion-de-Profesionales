@@ -45,5 +45,6 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('admin123'),
             'id_rols' => '2',
         ]);
+        \App\Models\Historial::factory(10)->create();
     }
 }

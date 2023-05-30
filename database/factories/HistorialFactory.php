@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ContactFactory extends Factory
+class HistorialFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,10 +14,7 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name(),
-            'telephone' => $this->faker->phoneNumber(),
-            'email' => $this->faker->unique()->safeEmail(),
-            'area' => $this->faker->jobTitle(),
+            //
         ];
     }
 }

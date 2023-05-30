@@ -32,9 +32,9 @@
             <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0">
                 <div class="ms-0 border-left2 d-flex position-relative">
                             <div class="p-4">
-                                <h3>{{$company->nombre}}</h3>
-                                <h5>{{$company->direccion}}</h5>
-                                <h5>Rut: {{$company->rut}}</h5>
+                                <h3>{{$company->name}}</h3>
+                                <h5>{{$company->address}}</h5>
+                                <h5>Rut: {{$company->RUT}}</h5>
                             </div>                                
                             <div>
                                 <img class="rounded-circle mt-4 h-50" src="{{asset('img/Empresa1.jpg')}}" alt="">
@@ -45,10 +45,10 @@
                     <div class="collapsible-div2 position-relative text-dark rounded-0 p-4 pb-0 mt-n2">
                         <div class="ms-0 border-left2 d-flex position-relative">
                             <div class="p-4">
-                                @if($company->contact)
-                                    <h3>{{$company->contact->nombre}}</h3>
-                                    <h5>{{$company->contact->area}}</h5>
-                                    <a href="#">{{$company->contact->email}}</a>
+                                @if($company->contacts)
+                                    <h3>{{$company->contacts->name}}</h3>
+                                    <h5>{{$company->contacts->area}}</h5>
+                                    <a href="#">{{$company->contacts->email}}</a>
                                 @endif
                             </div>
                             <div>

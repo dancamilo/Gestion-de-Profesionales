@@ -9,7 +9,7 @@ class Work extends Model
 {
     use HasFactory;
 
-    public function Work()
+    public function works()
     {
         return $this->hasMany(Work::class,'id');
     }
