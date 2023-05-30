@@ -15,10 +15,10 @@ class CreateProfesionalsTable extends Migration
     {
         Schema::create('profesionals', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('name');
             $table->string('email');
-            $table->string('telefono', 64)->unique();
-            $table->text('titulo')->nullable();
+            $table->string('telephone', 64)->unique();
+            $table->text('heading')->nullable();
             $table->timestamps();
         });
     }

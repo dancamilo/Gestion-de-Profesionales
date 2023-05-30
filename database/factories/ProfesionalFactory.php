@@ -15,10 +15,10 @@ class ProfesionalFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->name(),
+            'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'telefono' => $this->faker->phoneNumber(),
-            'titulo' => $this->faker->jobTitle(),
+            'telephone' => $this->faker->phoneNumber(),
+            'heading' => $this->faker->jobTitle(),
             
 
         ];

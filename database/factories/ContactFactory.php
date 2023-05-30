@@ -15,8 +15,8 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->name(),
-            'numero' => $this->faker->phoneNumber(),
+            'name' => $this->faker->name(),
+            'telephone' => $this->faker->phoneNumber(),
             'email' => $this->faker->unique()->safeEmail(),
             'area' => $this->faker->jobTitle(),
             'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),

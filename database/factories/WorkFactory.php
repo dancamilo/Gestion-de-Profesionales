@@ -15,10 +15,10 @@ class WorkFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->word(),
-            'fecha_in' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'fecha_fi' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'descripcion' => $this->faker->text(),
+            'name' => $this->faker->word(),
+            'startDate' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'endDate' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'details' => $this->faker->text(),
             'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
             'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),
             'id_courses' => $this->faker->randomElement(DB::table('courses')->pluck('id')),

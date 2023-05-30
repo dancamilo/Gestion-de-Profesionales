@@ -15,9 +15,9 @@ class CertificationFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->word(),
-            'fecha_ob' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'descripcion' => $this->faker->text(),
+            'name' => $this->faker->word(),
+            'obsDate' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'details' => $this->faker->text(),
             'id_courses' => $this->faker->randomElement(DB::table('courses')->pluck('id')),
             
         ];

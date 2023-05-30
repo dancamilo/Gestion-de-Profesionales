@@ -14,10 +14,10 @@ class CompanyFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->company(),
-            'direccion' => $this->faker->address(),
-            'rut' => $this->faker->randomNumber($nbDigits = NULL, $strict = false),
-            'telefono' => $this->faker->tollFreePhoneNumber(),
+            'name' => $this->faker->company(),
+            'address' => $this->faker->address(),
+            'RUT' => $this->faker->randomNumber($nbDigits = NULL, $strict = false),
+            'telephone' => $this->faker->tollFreePhoneNumber(),
             'email' => $this->faker->email(),
         ];
     }

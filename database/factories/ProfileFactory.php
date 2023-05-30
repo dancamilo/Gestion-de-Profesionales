@@ -14,7 +14,7 @@ class ProfileFactory extends Factory
     public function definition()
     {
         return [
-            'perfil' => $this->faker->word(),
+            'profile' => $this->faker->word(),
         ];
     }
 }
