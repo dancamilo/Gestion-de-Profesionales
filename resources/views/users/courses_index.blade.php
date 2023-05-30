@@ -28,7 +28,7 @@
                                 <div class=" border-left2  position-relative d-flex ">
                                     <div class="w-100 p-4 pt-3">
                                         <h3>{{$course->nombre}}</h3>
-                                        <h6>{{$course->Profesionals->nombre}}</h6>  
+                                        <h6>{{$course->Profesional->nombre}}</h6>  
                                         <div class="progress">
                                             <div class="progress-bar bg-success" style="width:80%">80%</div>
                                         </div>

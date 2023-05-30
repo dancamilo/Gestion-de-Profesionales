@@ -15,7 +15,7 @@
                 <select name="id_areas" id="" class="text-cursos text-center py-1">
                 <option value="" selected> Seleccione un área</option>
                     @foreach($profiles as $profil)
-                    <option value="{{$profil->id}}" selected>{{$profil->perfil}}</option>
+                    <option value="{{$profile->id}}" selected>{{$profile->perfil}}</option>
                     @endforeach
                 </select>
             </div>
