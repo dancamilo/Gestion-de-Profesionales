@@ -1,12 +1,11 @@
 <?php
 
-use App\Http\Controllers\CourseController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ProfesionalController;
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\HistorialController;
-use App\Models\Profesional;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfesionalController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,5 +34,4 @@ Route::resource('/professionals', ProfesionalController::class)->names('professi
 Route::resource('/profiles', ProfileController::class)->names('profiles');
 Route::resource('/users', UserController::class)->names('users');
 Route::resource('/companies', CompanyController::class)->names('companies');
-
 

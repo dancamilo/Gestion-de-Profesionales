@@ -9,16 +9,16 @@ class Area extends Model
 {
     use HasFactory;
 
-    public function Area()
+    public function areas()
     {
         return $this->hasMany(Area::class,'id');
     }
 
-    public function Profile()
+    public function profiles()
     {
         return $this->belongsTo(Profile::class,'id_profiles');
     }
-    public function profesional()
+    public function profesionals()
     {
         return $this->belongsTo(Profesional::class,'id_profesionals');
     }

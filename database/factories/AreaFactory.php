@@ -17,6 +17,7 @@ class AreaFactory extends Factory
         return [
             'id_profesionals' => $this->faker->randomElement(DB::table('profesionals')->pluck('id')),
             'id_profiles' => $this->faker->randomElement(DB::table('profiles')->pluck('id')),
+            'name' => $this->faker->company()
         ];
     }
 }
