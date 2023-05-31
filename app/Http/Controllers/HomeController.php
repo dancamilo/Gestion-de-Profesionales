@@ -27,10 +27,10 @@ class HomeController extends Controller
         $user=Auth::user();
         switch ($user->rols->rol) {
             case 'Educación Contínua':
-                return view('users.welcome');
+                return view('welcome');
                 break;
             case 'relacionamiento':
-                return redirect(route(''));
+                return redirect(route('welcome'));
                 break;
             default:
                 $error =['name'=>'423', 'desc'=>"No tienes el rol adecuado"];

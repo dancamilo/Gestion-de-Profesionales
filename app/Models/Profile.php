@@ -9,7 +9,7 @@ class Profile extends Model
 {
     use HasFactory;
     
-    public function Profile()
+    public function profiles()
     {
         return $this->hasMany(Profile::class,'id');
     }

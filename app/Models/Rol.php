@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Rol extends Model
 {
     use HasFactory;
+    protected $table="rols";
+
+    public function users(){
+        return $this->hasMany(User::class,'id');
+    }
 }
