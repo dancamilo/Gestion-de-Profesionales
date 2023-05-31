@@ -16,7 +16,12 @@ body{
     bottom: 45px;
     z-index: 99;
 }
-
+#under{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -105,11 +110,6 @@ a i:hover{
     z-index: 999;
 }
 
-.content {
-    margin-left: 110px;
-    min-height: 100vh;
-    transition: 0.5s;
-}
 
 @media (min-width: 992px) {
     .sidebar {
