@@ -11,7 +11,6 @@ class Company extends Model
 
     public function contacts()
     {
-        return $this->belongsTo(Contact::class, 'id_contacts', 'id');
+        return $this->belongsTo(Contact::class, 'id_contacts');
     }
 }
-

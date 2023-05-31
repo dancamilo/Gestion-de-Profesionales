@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Database\Factories\EconomicActivityProvider;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,8 +26,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\TypeDoc::factory()->create([
             'type' => 'tarjeta de identidad'
         ]);
-        \App\Models\Company::factory(5)->create();
         \App\Models\Contact::factory(5)->create();
+        \App\Models\Company::factory(5)->create();
         \App\Models\Profesional::factory(5)->create();
         \App\Models\Document::factory(5)->create();
         \App\Models\Profile::factory(5)->create();

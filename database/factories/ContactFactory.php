@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Hamcrest\Type\IsNumeric;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\DB;
 
@@ -15,9 +16,11 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
-            'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),
+            'docIdentity' => $this->faker->numerify('###########'),
             'name' => $this->faker->name(),
-            'telephone' => $this->faker->phoneNumber(),
+            'appointment' => $this->faker->jobTitle(),
+            'telephone' => $this->faker->numerify('#######'),
+            'cellular' => $this->faker->numerify('3#########'),
             'email' => $this->faker->unique()->safeEmail(),
             'area' => $this->faker->jobTitle(),
         ];
