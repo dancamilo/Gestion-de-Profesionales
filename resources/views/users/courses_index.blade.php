@@ -28,14 +28,14 @@
                                 <div class=" border-left2  position-relative d-flex ">
                                         <a class="w-100 p-4 pt-3" href="{{route('courses.show', $course->id)}}">
                                         
-                                            <h3>{{$course->nombre}}</h3>
-                                            <h6>{{$course->Profesional->nombre}}</h6>  
+                                            <h3>{{$course->name}}</h3>
+                                            <h6>{{$course->profesionals->name}}</h6>  
                                             <div class="progress">
                                                 <div class="progress-bar bg-success" style="width:80%">80%</div>
                                             </div>
                                         </a>   
                                         <div class="col-sm-3 text-center mt-4 text-dark">
-                                            <h1>{{$course->duracion}}</h1>
+                                            <h1>{{$course->term}}</h1>
                                             <p class="mt-3" >Horas Restantes</p>
                                         </div>
                                     
@@ -45,7 +45,7 @@
                                         <form action="{{route('courses.destroy', $course->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-danger buttons-crud"><i class="fa-solid fa-trash-can ms-n4"></i></button>
+                                            <a type="submit" class="text-danger ms-3 buttoms-crud"><i class="fa-solid fa-trash-can ms-n4"></i></a>
                                         </form>
                                     </div>
                                 </div>

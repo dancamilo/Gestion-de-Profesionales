@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Area;
 use App\Models\Course;
 use App\Models\Company;
 use App\Models\Profesional;
@@ -12,6 +13,11 @@ use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -45,13 +51,13 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         $course = new Course();
-        $course ->nombre = $request->nombre;
-        $course ->duracion = $request->duracion;
+        $course ->name = $request->name;
+        $course ->term = $request->term;
         $course ->id_areas = $request->id_areas;
-        $course ->descripcion = $request->descripcion;
-        $course ->observaciones = $request->observaciones;
-        $course ->fecha_inicial = $request->fecha_inicial;
-        $course ->fecha_final = $request->fecha_final;
+        $course ->details = $request->details;
+        $course ->observations = $request->observations;
+        $course ->startDate = $request->startDate;
+        $course ->endDate = $request->endDate;
         $course ->id_profesionals = $request->id_profesionals;
         $course ->id_companies = $request->id_companies;
         $course->save();
@@ -67,7 +73,10 @@ class CourseController extends Controller
     public function show($id)
     {
         $course = Course::find($id);
-        return view('users.courses_show', compact('course'));
+        $profesional = Profesional::find($course->id_profesionals);
+        $company = Company::find($course->id_companies);
+        $area = Area::find($course->id_areas);
+        return view('users.courses_show', compact('course','profesional','company','area'));
     }
 
     /**
@@ -80,8 +89,9 @@ class CourseController extends Controller
     {
         $courses = Course::find($id);
         $profesional = Profesional::all();
+        $areas = Area::all();
         $companies = Company::all();
-        return view('users.courses_edit', compact('courses','profesional','companies'));
+        return view('users.courses_edit', compact('courses','profesional','companies','areas'));
     }
 
     /**
@@ -94,12 +104,14 @@ class CourseController extends Controller
     public function update(Request $request, $id)
     {
         $course = Course::find($id);
-        $course ->nombre = $request->nombre;
-        $course ->fecha_inicial = $request->fecha_inicial;
-        $course ->fecha_final = $request->fecha_final;
-        $course ->duracion=$request->duracion;
-        $course ->descripcion = $request->descripcion;
-        $course ->observaciones = $request->observaciones;
+        $course ->name = $request->name;
+        $course ->term = $request->term;
+        $course ->details = $request->details;
+        $course ->observations = $request->observations;
+        $course ->startDate = $request->startDate;
+        $course ->endDate = $request->endDate;
+        $course ->id_profesionals = $request->id_profesionals; 
+        $course ->id_areas = $request->id_areas;  
         $course->save();
         return redirect(route('courses.index', $id));
     }
