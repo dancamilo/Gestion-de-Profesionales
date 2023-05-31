@@ -44,7 +44,7 @@
 
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+        <div class="sidebar pe-4 pb-3 mt-4">
             <nav class="navbar navbar-dark panel">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i></i></h3>
@@ -55,7 +55,6 @@
                    
                 </div>
                 <div class="navbar-nav w-100">
-
                     <a href="{{route ('home')}}" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
                     <a href="{{route('courses.index')}}" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
                     <a href="{{route('professionals.index')}}" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>

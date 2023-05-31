@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="ms-5 container w-100v">
+    <div class="container w-100v ms-5">
         <div class="row p-0">
             <div class="col-sm-12 col-md-6">
                 <div class="mt-5">
