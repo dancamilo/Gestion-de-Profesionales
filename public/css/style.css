@@ -9,6 +9,14 @@
 body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center
+ }
 .back-to-top {
     position: fixed;
     display: none;
