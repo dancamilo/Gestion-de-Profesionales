@@ -15,7 +15,7 @@
                 <select name="id_areas" id="" class="text-cursos text-center py-1">
                 <option selected> Seleccione un área</option>
                     @foreach($areas as $area)
-                    <option>{{$area->name}}</option>
+                    <option value="{{$area->id}}">{{$area->name}}</option>
                     @endforeach
                 </select>
             </div>
@@ -24,7 +24,7 @@
                 <select name="id_profesionals" id="" class="text-cursos text-center py-1">
                     <option selected> Seleccione un profesional</option>
                     @foreach($profesionals as $profesional)
-                    <option>{{$profesional->name}}</option>
+                    <option value="{{$profesional->id}}">{{$profesional->name}}</option>
                     @endforeach
                 </select>
             </div>
@@ -33,7 +33,7 @@
                 <select name="id_companies" id="" class="text-cursos text-center py-1">
                     <option selected> Seleccione una empresa</option>
                     @foreach($companies as $company)
-                    <option>{{$company->name}}</option>
+                    <option value="{{$company->id}}">{{$company->name}}</option>
                     @endforeach
                 </select>
             </div>
@@ -41,11 +41,11 @@
             <div class="ms-4 mt-3 my-5 d-flex">
                 <div class="d-grid">
                     <label for="date-start" class="text-dark pb-1">Fecha inicio</label>
-                    <input type="date" name="fecha_inicial" class="w-40 text-center py-1">
+                    <input type="date" name="startDate" class="w-40 text-center py-1">
                 </div>
                 <div class="d-grid ms-3">
                     <label for="date-start" class="text-dark pb-1">Fecha final</label>
-                    <input type="date" name="fecha_final" class="w-40 text-center py-1">
+                    <input type="date" name="endDate" class="w-40 text-center py-1">
                 </div>
             </div>
     </div>  
