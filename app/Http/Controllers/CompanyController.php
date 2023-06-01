@@ -15,9 +15,14 @@ class CompanyController extends Controller
      */
     public function index()
     {
+<<<<<<< Updated upstream
         $companies = Company::all();
         $contacts = Contact::all();
         return view('users.emp_index', compact('companies','contacts'));
+=======
+            $contacts = Contact::all();
+            return view('users.emp_index', compact('contacts'));
+>>>>>>> Stashed changes
     }
 
     /**
@@ -27,7 +32,13 @@ class CompanyController extends Controller
      */
     public function create()
     {
+<<<<<<< Updated upstream
         //
+=======
+        $company = Company::all();
+        $contact = Contact::all();
+        return view('users.emp_create');
+>>>>>>> Stashed changes
     }
 
     /**
@@ -60,7 +71,9 @@ class CompanyController extends Controller
      */
     public function edit($id)
     {
-        //
+        $company = Company::find($id);
+        $contact = Contact::find($id);
+        return view('users.emp_edit', compact('company', 'contact'));
     }
 
     /**
@@ -72,7 +85,20 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $company = Company::find($id);
+        $company -> name = $request -> name;
+        $company -> address = $request -> address;
+        $company -> RUT = $request -> RUT;
+        $company -> telephone = $request -> telephone;
+        $company -> email = $request -> email;
+        $company -> save();
+        $contact = Contact::find($id);
+        $contact -> name = $request -> name;
+        $contact -> telephone = $request -> telephone;
+        $contact -> email = $request -> email;
+        $contact -> area = $request -> area;
+        $contact -> save();
+        return redirect(route('companies.show', $id));
     }
 
     /**

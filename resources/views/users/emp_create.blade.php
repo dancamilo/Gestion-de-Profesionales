@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<form class=" row g-3 col-md-11 needs-validation " action="{{ route('companies.store') }}"method="post">
+    @csrf
 <div class="d-flex w-100v mt-3">
     <div class="create-card w-25 me-4 p-4">
         <h3>Añadir empresa</h3>
@@ -13,54 +15,57 @@
                 </div>
             </div>
             <div class="">
-                  <input type="text" class="form-control mb-2" name="name" id="" aria-describedby="helpId" placeholder="Nombre">
-                  <input type="text" class="form-control mb-2" name="lastname" id="" aria-describedby="helpId" placeholder="Razón social">
-                  <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Rut">
+                  <input type="text" class="form-control mb-2" name="name" id="" placeholder="Nombre">
+                  <input type="text" class="form-control mb-2" name="bussName" id="" placeholder="Razón social">
+                  <input type="text" class="form-control" name="RUT" id="" placeholder="Rut">
             </div>
         </div>
         <hr width="80%">
         <div class="d-flex my-3">
-                <input type="text" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="Nit">
-                <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Cod. verificación">
+                <input type="text" class="form-control me-2" name="NIT" id="" placeholder="Nit">
+                <input type="text" class="form-control" name="check" id="" placeholder="Cod. verificación">
         </div>
         <div class="d-flex my-3">
-            <input type="email" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="País(Casa matríz)">
-            <input type="email" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Actividad económica">
+            <input type="text" class="form-control me-2" name="country" id="" placeholder="País(Casa matríz)">
+            <input type="text" class="form-control" name="ecoActivity" id="" placeholder="Actividad económica">
         </div>
         <div class="d-flex my-3">
-            <input type="email" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="Dirección">
-            <input type="email" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Localidad">
+            <input type="text" class="form-control me-2" name="address" id="" placeholder="Dirección">
+            <input type="text" class="form-control" name="location" id="" placeholder="Localidad">
         </div>
         <div class="d-flex my-3">
-            <input type="email" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="Num empleados">
-            <input type="email" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Tamaño empresa">
+            <input type="text" class="form-control me-2" name="employees" id="" placeholder="Num empleados">
+            <input type="text" class="form-control" name="compSize" id="" placeholder="Tamaño empresa">
         </div>
         <div class="d-flex my-3">
-            <input type="email" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="Representante legal">
-            <input type="email" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Tamaño empresa">
+            <input type="text" class="form-control me-2" name="name" id="" placeholder="Representante legal">
+            <input type="text" class="form-control" name="appointment" id="" placeholder="Tamaño empresa">
         </div>
-        <input type="email" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Página web">
+        <input type="text" class="form-control" name="webPage" id="" placeholder="Página web">
     </div>
     <div class="w-25 me-2 p-4 align-items-center justify-content-center text-left">
         <h4 class="">Información contacto empresa</h4>
         <div class="d-flex my-3">
+            <input type="text" class="form-control" name="name" id="" placeholder="Nombre Representante">
+        </div>
+        <div class="d-flex my-3">
             <select class="w-25 me-2 text-center" name="" id="">
-                <option selected value="">C.C</option>
+                <option selected value="">Seleccione un documento</option>
             </select>
-            <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Documento de identidad">
+            <input type="text" class="form-control" name="docIdentity" id="" placeholder="Documento de identidad">
         </div>
         <div class="d-flex mb-3">
             <select class="me-2 text-center" name="" id="">
                 <option selected value="">Área especializada</option>
             </select>            
-            <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Cargo">
+            <input type="text" class="form-control" name="appointment" id="" placeholder="Cargo">
         </div>
         <div class="d-flex mb-3">
-            <input type="text" class="form-control me-2" name="name" id="" aria-describedby="helpId" placeholder="Teléfono fijo">
-            <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Celular">
+            <input type="text" class="form-control me-2" name="telephone" id="" placeholder="Teléfono fijo">
+            <input type="text" class="form-control" name="cellular" id="" placeholder="Celular">
         </div>
-        <input type="text" class="form-control mb-3" name="name" id="" aria-describedby="helpId" placeholder="Correo personal">
-        <input type="text" class="form-control mb-3" name="lastname" id="" aria-describedby="helpId" placeholder="Correo profesional">
+        <input type="text" class="form-control mb-3" name="email" id="" placeholder="Correo personal">
+        <input type="text" class="form-control mb-3" name="email" id="" placeholder="Correo profesional">
         <hr class="mt-1" width="80%">
         <h4 class="py-3">Documentos requeridos</h4>
         <div class="text-center mb-3">
@@ -72,18 +77,19 @@
         <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
             <option selected value="">Área especializada</option>
         </select>
-        <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
-        <input type="text" class="form-control mt-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
-        <input type="text" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Cursos a realizar">
+        <input type="text" class="form-control mt-3" name="lastname" id="" placeholder="Cursos a realizar">
+        <input type="text" class="form-control mt-3" name="lastname" id="" placeholder="Cursos a realizar">
+        <input type="text" class="form-control my-3" name="lastname" id="" placeholder="Cursos a realizar">
         <select class="w-100 mb-3 ps-2 py-2 me-2 text-left" name="" id="">
             <option selected value="">Profesional encargado</option>
         </select>
         <hr width="80%">
         <h4 class="pt-3">Observaciones</h4>
-        <input type="text" class="form-control h-25 me-2" name="lastname" id="" aria-describedby="helpId" placeholder="">
+        <input type="text" class="form-control h-25 me-2" name="lastname" id="" placeholder="">
         <div class="text-center mt-3">
-            <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Guardar</a>
+            <button type="submit" class="btn btn-outline-primary">Guardar</button>
         </div>
     </div>
 </div>
+</form>
 @endsection

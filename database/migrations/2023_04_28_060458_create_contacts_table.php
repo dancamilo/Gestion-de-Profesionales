@@ -16,7 +16,14 @@ class CreateContactsTable extends Migration
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+<<<<<<< Updated upstream:database/migrations/2023_04_28_060458_create_contacts_table.php
             $table->string('telephone');
+=======
+            $table->string('docIdentity');
+            $table->string('appointment');
+            $table->BigInteger('telephone');
+            $table->BigInteger('cellular');
+>>>>>>> Stashed changes:database/migrations/2023_04_28_060743_create_contacts_table.php
             $table->string('email');
             $table->text('area');
             $table->foreignId('id_companies')->constrained('companies');

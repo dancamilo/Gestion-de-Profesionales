@@ -174,6 +174,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< Updated upstream
+=======
+        App\Providers\EconomicActivityProvider::class,
+        App\Providers\LocationProvider::class,
+>>>>>>> Stashed changes
 
     ],
 
