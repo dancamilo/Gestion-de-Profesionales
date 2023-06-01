@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container m-0 w-100">
+<div class="container m-0 w-100 ms-5 ps-5">
     <style>
         #module1{
             background-image: url({{asset('img/imgcursos.png')}});

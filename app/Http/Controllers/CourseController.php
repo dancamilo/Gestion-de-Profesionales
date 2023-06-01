@@ -31,8 +31,9 @@ class CourseController extends Controller
     {
         $profiles = Profile::all();
         $profesionals = Profesional::all();
+        $areas=Area::all();
         $companies = Company::all();
-        return view ('users.courses_create',compact('profiles','profesionals', 'companies'));
+        return view ('users.courses_create',compact('profiles','profesionals', 'companies','areas'));
     }
 
     /**

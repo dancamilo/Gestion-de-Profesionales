@@ -43,7 +43,7 @@
 
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+        <div class="sidebar pe-4 pb-3 mt-4">
             <nav class="navbar navbar-dark panel">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i></i></h3>
@@ -62,6 +62,14 @@
                     <a href="{{route('companies.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Compañias"><i class="fa-solid fa-building"></i><a>
                     <a href="chart.html" class="nav-item nav-link" data-bs-toggle="tooltip" title="Certificados"><i class="fa-solid fa-file-arrow-up"></i></a>
                     <a href="#" class="nav-item nav-link" data-bs-toggle="tooltip" title="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="{{route ('home')}}" class="nav-item nav-link active"><i class="fa-solid fa-house"></i></a>
+                    <a href="{{route('courses.index')}}" class="nav-item nav-link"><i class="fa-solid fa-graduation-cap"></i></a>   
+                    <a href="{{route('professionals.index')}}" class="nav-item nav-link"><i class="fa-solid fa-user-tie"></i></a>
+                    <a href="{{route('profiles.index')}}" class="nav-item nav-link"><i class="fa-solid fa-address-book"></i></a>
+                    <a href="{{route('users.index')}}" class="nav-item nav-link"><i class="fa-solid fa-door-open"></i></a>
+                    <a href="{{route('companies.index')}}" class="nav-item nav-link"><i class="fa-solid fa-building"></i><a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-file-arrow-up"></i></a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </nav>
         </div>
