@@ -9,12 +9,12 @@ class Certification extends Model
 {
     use HasFactory;
 
-    public function certifications()
+    public function Certification()
     {
         return $this->hasMany(Certification::class,'id');
     }
     
-    public function courses()
+    public function course()
     {
         return $this->belongsTo(Course::class,'id_courses');
     }

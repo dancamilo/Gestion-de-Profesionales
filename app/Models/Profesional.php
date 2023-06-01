@@ -9,7 +9,7 @@ class Profesional extends Model
 {
     use HasFactory;
 
-    public function profesionals()
+    public function Profesional()
     {
         return $this->hasMany(Profesional::class,'id');
     }

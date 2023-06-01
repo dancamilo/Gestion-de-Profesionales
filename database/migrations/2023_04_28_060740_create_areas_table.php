@@ -17,7 +17,6 @@ class CreateAreasTable extends Migration
             $table->id();
             $table->foreignId('id_profiles')->constrained('profiles');
             $table->foreignId('id_profesionals')->constrained('profesionals');
-            $table->string('name');
             $table->timestamps();
         });
     }

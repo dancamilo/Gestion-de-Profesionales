@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHistorialsTable extends Migration
+class CreateContactsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class CreateHistorialsTable extends Migration
      */
     public function up()
     {
-        Schema::create('historials', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('telephone');
+            $table->string('email');
+            $table->text('area');
+            $table->foreignId('id_companies')->constrained('companies');
             $table->timestamps();
         });
     }
@@ -26,6 +31,6 @@ class CreateHistorialsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historials');
+        Schema::dropIfExists('contacts');
     }
 }

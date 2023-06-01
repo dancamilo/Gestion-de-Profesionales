@@ -10,21 +10,21 @@ class Course extends Model
     use HasFactory;
 
 
-    public function courses()
+    public function Course()
     {
         return $this->hasMany(Course::class,'id');
     }
 
-    public function profesionals()
+    public function profesional()
     {
         return $this->belongsTo(Profesional::class,'id_profesionals');
     }
 
-    public function companies()
+    public function company()
     {
         return $this->belongsTo(Company::class,'id_companies');
     }
-    public function areas()
+    public function area()
     {
         return $this->belongsTo(Area::class,'id_areas');
     }

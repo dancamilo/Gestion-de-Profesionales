@@ -2,22 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Area;
 use App\Models\Course;
 use App\Models\Company;
 use App\Models\Profesional;
 use App\Models\Profile;
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -51,15 +44,16 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         $course = new Course();
-        $course ->name = $request->name;
-        $course ->term = $request->term;
+        $course ->nombre = $request->nombre;
+        $course ->duracion = $request->duracion;
         $course ->id_areas = $request->id_areas;
-        $course ->details = $request->details;
-        $course ->observations = $request->observations;
-        $course ->startDate = $request->startDate;
-        $course ->endDate = $request->endDate;
+        $course ->descripcion = $request->descripcion;
+        $course ->observaciones = $request->observaciones;
+        $course ->fecha_inicial = $request->fecha_inicial;
+        $course ->fecha_final = $request->fecha_final;
         $course ->id_profesionals = $request->id_profesionals;
         $course ->id_companies = $request->id_companies;
+
         $course->save();
         return redirect(route('courses.index')) ;
     }
@@ -72,11 +66,8 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        $course = Course::find($id);
-        $profesional = Profesional::find($course->id_profesionals);
-        $company = Company::find($course->id_companies);
-        $area = Area::find($course->id_areas);
-        return view('users.courses_show', compact('course','profesional','company','area'));
+        // $course = Course::find($id);
+        // return view('courses.show', compact('course'));
     }
 
     /**
@@ -87,11 +78,7 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        $courses = Course::find($id);
-        $profesional = Profesional::all();
-        $areas = Area::all();
-        $companies = Company::all();
-        return view('users.courses_edit', compact('courses','profesional','companies','areas'));
+        return view('#');
     }
 
     /**
@@ -103,17 +90,7 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $course = Course::find($id);
-        $course ->name = $request->name;
-        $course ->term = $request->term;
-        $course ->details = $request->details;
-        $course ->observations = $request->observations;
-        $course ->startDate = $request->startDate;
-        $course ->endDate = $request->endDate;
-        $course ->id_profesionals = $request->id_profesionals; 
-        $course ->id_areas = $request->id_areas;  
-        $course->save();
-        return redirect(route('courses.index', $id));
+        // return view('courses.update');
     }
 
     /**

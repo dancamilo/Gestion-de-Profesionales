@@ -15,7 +15,7 @@ class WorkFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->jobTitle(),
+            'name' => $this->faker->word(),
             'startDate' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
             'endDate' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
             'details' => $this->faker->text(),

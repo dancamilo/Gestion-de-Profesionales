@@ -8,11 +8,6 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -20,9 +15,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-            $contacts = Contact::all();
-            //return $contacts[0]->company;
-            return view('users.emp_index', compact('contacts'));
+        $companies = Company::all();
+        $contacts = Contact::all();
+        return view('users.emp_index', compact('companies','contacts'));
     }
 
     /**
@@ -32,7 +27,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        return view('users.emp_create');
+        //
     }
 
     /**
@@ -43,20 +38,7 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-        $company = new Company();
-        $company -> name = $request -> name;
-        $company -> address = $request -> address;
-        $company -> RUT = $request -> RUT;
-        $company -> telephone = $request -> telephone;
-        $company -> email = $request -> email;
-        $company -> save();
-        $contact = new Contact();
-        $contact -> name = $request -> name;
-        $contact -> telephone = $request -> telephone;
-        $contact -> email = $request -> email;
-        $contact -> area = $request -> area;
-        $contact -> save();
-        return redirect(route('companies.show'));
+        //
     }
 
     /**
@@ -67,9 +49,7 @@ class CompanyController extends Controller
      */
     public function show($id)
     {
-        $company = Company::find($id);
-        $contact = Contact::find($id);
-        return view('users.emp_show', compact('company', 'contact'));
+        //
     }
 
     /**

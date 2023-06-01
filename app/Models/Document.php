@@ -10,11 +10,11 @@ class Document extends Model
 {
     use HasFactory;
 
-    public function typeDocs()
+    public function TypeDoc()
     {
         return $this->belongsTo(TypeDoc::class,'id_typedocs');
     }
-    public function profesionals()
+    public function profesional()
     {
         return $this->belongsTo(Profesional::class,'id_profesionals');
     }

@@ -10,7 +10,7 @@ class TypeDoc extends Model
     use HasFactory;
     protected $table="type_docs";
 
-    public function typeDocs()
+    public function TypeDoc()
     {
         return $this->hasMany(TypeDoc::class,'id');
     }
