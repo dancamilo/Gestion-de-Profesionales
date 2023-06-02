@@ -17,7 +17,7 @@ class CreateProfesionalsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->string('telephone', 64)->unique();
+            $table->BigInteger('telephone');
             $table->text('heading')->nullable();
             $table->timestamps();
         });

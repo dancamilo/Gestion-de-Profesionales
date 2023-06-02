@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Company;
 use App\Models\Contact;
+use App\Models\Course;
+use App\Models\Profesional;
 use Illuminate\Http\Request;
+
 
 class CompanyController extends Controller
 {
@@ -25,7 +28,8 @@ class CompanyController extends Controller
     {
         $companies = Company::all();
         $contacts = Contact::all();
-        return view('users.emp_index', compact('companies','contacts'));
+        $courses = Course::all();
+        return view('users.emp_index', compact('companies','contacts','courses'));
     }
 
     /**
@@ -37,6 +41,7 @@ class CompanyController extends Controller
     {
         $company = Company::all();
         $contact = Contact::all();
+        $course = Course::all();
         return view('users.emp_create');
     }
 
@@ -48,7 +53,46 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $validatedData = $request->validate([
+        //     'nameCmp' => 'required',
+        //     'bussName' => 'required',
+        //     'RUT' => 'required',
+        //     'phoneCmp' => 'required',
+        //     'emailCmp' => 'required',
+        //     'nameCnt' => 'required',
+        //     'phoneCnt' => 'required',
+        //     'emailCnt' => 'required'
+        // ]);
+        $contact = new Contact();
+        $contact -> nameCnt = $request -> nameCnt;
+        $contact -> docIdentity = $request -> docIdentity;
+        $contact -> appointment = $request -> appointment;
+        $contact -> phoneCnt = $request -> phoneCnt;
+        $contact -> cellular = $request -> cellular;
+        $contact -> emailCnt = $request -> emailCnt;
+        $contact -> save();
+        $company = new Company();
+        $company -> nameCmp = $request -> nameCmp;
+        $company -> bussName = $request -> bussName;
+        $company -> RUT = $request -> RUT;
+        $company -> NIT = $request -> NIT;
+        $company -> check = $request -> check;
+        $company -> country = $request -> country;
+        $company -> ecoActivity = $request ->ecoActivity;
+        $company -> address = $request -> address;
+        $company -> location = $request -> location;
+        $company -> employees = $request -> employees;
+        $company -> compSize = $request -> compSize;
+        $company -> emailCmp = $request -> emailCmp;
+        $company -> webPage = $request -> webPage;
+        $company -> id_contacts = $contact->id;
+        $company -> save();
+        $course = new Course();
+        $course -> name = $request -> name;
+        $course -> id_profesional = $request -> input('name');
+        $course -> id_companies = $company -> id;
+        $course -> save();
+        return redirect(route('companies.index'));
     }
 
     /**
@@ -59,7 +103,12 @@ class CompanyController extends Controller
      */
     public function show($id)
     {
-        //
+        {
+            $company = Company::find($id);
+            $contact = Contact::find($id);
+            $course = Course::all();
+            return view('users.emp_show', compact('company', 'contact'),['courses' => $course]);
+        }
     }
 
     /**
@@ -85,16 +134,16 @@ class CompanyController extends Controller
     public function update(Request $request, $id)
     {
         $company = Company::find($id);
-        $company -> name = $request -> name;
+        $company -> nameCmp = $request -> nameCmp;
         $company -> address = $request -> address;
         $company -> RUT = $request -> RUT;
-        $company -> telephone = $request -> telephone;
-        $company -> email = $request -> email;
+        $company -> phoneCmp = $request -> phoneCmp;
+        $company -> emailCmp = $request -> emailCmp;
         $company -> save();
         $contact = Contact::find($id);
-        $contact -> name = $request -> name;
-        $contact -> telephone = $request -> telephone;
-        $contact -> email = $request -> email;
+        $contact -> nameCnt = $request -> nameCnt;
+        $contact -> phoneCnt = $request -> phoneCnt;
+        $contact -> emailCnt = $request -> emailCnt;
         $contact -> area = $request -> area;
         $contact -> save();
         return redirect(route('companies.show', $id));

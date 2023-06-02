@@ -16,14 +16,11 @@ class ContactFactory extends Factory
     {
         return [
             'docIdentity' => $this->faker->numerify('###########'),
-            'name' => $this->faker->name(),
+            'nameCnt' => $this->faker->name(),
             'appointment' => $this->faker->jobTitle(),
-            'telephone' => $this->faker->numerify('#######'),
+            'phoneCnt' => $this->faker->numerify('#######'),
             'cellular' => $this->faker->numerify('3#########'),
-            'telephone' => $this->faker->numerify('#######'),
-            'email' => $this->faker->unique()->safeEmail(),
-            'area' => $this->faker->jobTitle(),
-            
+            'emailCnt' => $this->faker->unique()->safeEmail(),            
         ];
     }
 }

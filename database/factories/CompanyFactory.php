@@ -19,7 +19,7 @@ class CompanyFactory extends Factory
 
 
         return [
-            'name' => $this->faker->company(),
+            'nameCmp' => $this->faker->company(),
             'id_contacts' => $this->faker->randomElement(DB::table('contacts')->pluck('id')),
             'bussName' => $this->faker->companySuffix(),
             'country' => $this->faker->country(),
@@ -31,8 +31,8 @@ class CompanyFactory extends Factory
             'ecoActivity' => $activity,
             'employees' => $this->faker->numerify('####'),
             'compSize' => $this->faker->randomElement(['micro -','pequeña','mediana','grande']),
-            'telephone' => $this->faker->numerify('#######'),
-            'email' => $this->faker->email(),
+            'phoneCmp' => $this->faker->numerify('#######'),
+            'emailCmp' => $this->faker->email(),
             'webPage' => $this->faker->url()
         ];
     }

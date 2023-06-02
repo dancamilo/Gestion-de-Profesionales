@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="">
-                  <input type="text" class="form-control mb-2" name="name" id="" placeholder="Nombre">
+                  <input type="text" class="form-control mb-2" name="nameCmp" id="" placeholder="Nombre">
                   <input type="text" class="form-control mb-2" name="bussName" id="" placeholder="Razón social">
                   <input type="text" class="form-control" name="RUT" id="" placeholder="Rut">
             </div>
@@ -38,7 +38,7 @@
             <input type="text" class="form-control" name="compSize" id="" placeholder="Tamaño empresa">
         </div>
         <div class="d-flex my-3">
-            <input type="text" class="form-control me-2" name="name" id="" placeholder="Representante legal">
+            <input type="text" class="form-control me-2" name="nameCnt" id="" placeholder="Representante legal">
             <input type="text" class="form-control" name="appointment" id="" placeholder="Tamaño empresa">
         </div>
         <input type="text" class="form-control" name="webPage" id="" placeholder="Página web">
@@ -46,7 +46,7 @@
     <div class="w-25 me-2 p-4 align-items-center justify-content-center text-left">
         <h4 class="">Información contacto empresa</h4>
         <div class="d-flex my-3">
-            <input type="text" class="form-control" name="name" id="" placeholder="Nombre Representante">
+            <input type="text" class="form-control" name="nameCnt" id="" placeholder="Nombre Representante">
         </div>
         <div class="d-flex my-3">
             <select class="w-25 me-2 text-center" name="" id="">
@@ -61,11 +61,11 @@
             <input type="text" class="form-control" name="appointment" id="" placeholder="Cargo">
         </div>
         <div class="d-flex mb-3">
-            <input type="text" class="form-control me-2" name="telephone" id="" placeholder="Teléfono fijo">
+            <input type="text" class="form-control me-2" name="phoneCnt" id="" placeholder="Teléfono fijo">
             <input type="text" class="form-control" name="cellular" id="" placeholder="Celular">
         </div>
-        <input type="text" class="form-control mb-3" name="email" id="" placeholder="Correo personal">
-        <input type="text" class="form-control mb-3" name="email" id="" placeholder="Correo profesional">
+        <input type="text" class="form-control mb-3" name="emailCnt" id="" placeholder="Correo personal">
+        <input type="text" class="form-control mb-3" name="emailCmp" id="" placeholder="Correo profesional">
         <hr class="mt-1" width="80%">
         <h4 class="py-3">Documentos requeridos</h4>
         <div class="text-center mb-3">

@@ -17,7 +17,7 @@ class ProfesionalFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'telephone' => $this->faker->phoneNumber(),
+            'telephone' => $this->faker->numerify('#######'),
             'heading' => $this->faker->jobTitle(),
             
 

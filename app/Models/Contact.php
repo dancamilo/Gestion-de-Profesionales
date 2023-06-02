@@ -1,16 +1,12 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
 class Contact extends Model
 {
     use HasFactory;
-
-    public function Contact()
+    public function company()
     {
-        return $this->belongsTo(Contact::class, 'id_contacts', 'id');
+        return $this->belongsTo(Company::class, 'id');
     }
 }

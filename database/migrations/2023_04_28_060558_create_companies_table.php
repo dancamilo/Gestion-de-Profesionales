@@ -16,7 +16,7 @@ class CreateCompaniesTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_contacts')->constrained('contacts');
-            $table->string('name');   
+            $table->string('nameCmp');   
             $table->string('bussName');
             $table->string('country');
             $table->string('location');
@@ -27,8 +27,8 @@ class CreateCompaniesTable extends Migration
             $table->string('ecoActivity');
             $table->Integer('employees');
             $table->string('compSize');
-            $table->BigInteger('telephone');
-            $table->string('email');
+            $table->string('phoneCmp')->nullable();
+            $table->string('emailCmp');
             $table->string('webPage');
             $table->timestamps();
         });
