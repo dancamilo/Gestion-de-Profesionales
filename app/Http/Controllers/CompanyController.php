@@ -15,14 +15,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-<<<<<<< Updated upstream
         $companies = Company::all();
         $contacts = Contact::all();
         return view('users.emp_index', compact('companies','contacts'));
-=======
-            $contacts = Contact::all();
-            return view('users.emp_index', compact('contacts'));
->>>>>>> Stashed changes
     }
 
     /**
@@ -32,13 +27,9 @@ class CompanyController extends Controller
      */
     public function create()
     {
-<<<<<<< Updated upstream
-        //
-=======
         $company = Company::all();
         $contact = Contact::all();
         return view('users.emp_create');
->>>>>>> Stashed changes
     }
 
     /**

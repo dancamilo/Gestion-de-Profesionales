@@ -24,8 +24,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\TypeDoc::factory()->create([
             'type' => 'tarjeta de identidad'
         ]);
-<<<<<<< Updated upstream
-=======
         \App\Models\TypeDoc::factory()->create([
             'type' => 'cédula de ciudadanía'
         ]);
@@ -33,7 +31,6 @@ class DatabaseSeeder extends Seeder
             'type' => 'cédula extranjería'
         ]);
         \App\Models\Contact::factory(5)->create();
->>>>>>> Stashed changes
         \App\Models\Company::factory(5)->create();
         \App\Models\Contact::factory(5)->create();
         \App\Models\Profesional::factory(5)->create();

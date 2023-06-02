@@ -10,13 +10,8 @@
                     <img class="img-card" src="{{ asset('img/Empresa1.jpg') }}" alt="">
                 </div>
                 <div class="">
-<<<<<<< Updated upstream
-                    <h5 class="mt-3 mb-4">Nombre</h5>
-                    <h5>Razón social</h5>
-=======
                     <h5 class="mt-3 mb-4">Empresa: {{$contact->company->name}}</h5>
                     <h5>Razón Social: {{$contact->company->bussName}}</h5>
->>>>>>> Stashed changes
                 </div>
             </div>
             <hr width="80%">
@@ -37,13 +32,8 @@
                 <h5 class="ms-1">Tamaño empresa: {{$contact->company->compSize}} empresa</h5>
             </div>
             <div class="d-flex my-3">
-<<<<<<< Updated upstream
-                <h5 class="me-4">Carlos Mora</h5>
-                <h5>12345678</h5>
-=======
                 <h5 class="me-4">Contacto: {{$contact->name}}</h5>
                 <h5>Nro Doc: {{$contact->docIdentity}}</h5>
->>>>>>> Stashed changes
             </div>
             <h5 class="my-4">Página Web: {{$contact->company->webPage}}</h5>
         </div>

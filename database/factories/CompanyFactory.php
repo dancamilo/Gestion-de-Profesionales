@@ -13,20 +13,12 @@ class CompanyFactory extends Factory
      */
     public function definition()
     {
-<<<<<<< Updated upstream
-=======
         $activity = app('economicActivity')->generate();
         $locate = app('location')->generate();
 
 
->>>>>>> Stashed changes
         return [
             'name' => $this->faker->company(),
-<<<<<<< Updated upstream
-            'address' => $this->faker->address(),
-            'RUT' => $this->faker->randomNumber($nbDigits = NULL, $strict = false),
-            'telephone' => $this->faker->tollFreePhoneNumber(),
-=======
             'bussName' => $this->faker->companySuffix(),
             'country' => $this->faker->country(),
             'location'=> $locate,
@@ -38,7 +30,6 @@ class CompanyFactory extends Factory
             'employees' => $this->faker->numerify('####'),
             'compSize' => $this->faker->randomElement(['micro -','pequeña','mediana','grande']),
             'telephone' => $this->faker->numerify('#######'),
->>>>>>> Stashed changes
             'email' => $this->faker->email(),
         ];
     }
