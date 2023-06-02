@@ -29,7 +29,7 @@
                                         <a class="w-100 p-4 pt-3" href="{{route('courses.show', $course->id)}}">
                                         
                                             <h3>{{$course->name}}</h3>
-                                            <h6>{{$course->profesionals->name}}</h6>  
+                                            <h6>{{$course->profesional->name}}</h6>  
                                             <div class="progress">
                                                 <div class="progress-bar bg-success" style="width:80%">80%</div>
                                             </div>

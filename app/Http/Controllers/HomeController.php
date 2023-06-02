@@ -27,7 +27,7 @@ class HomeController extends Controller
         $user=Auth::user();
         switch ($user->rols->rol) {
             case 'Educación Contínua':
-                return view('users.welcome');
+                return view('welcome');
                 break;
             case 'relacionamiento':
                 return redirect(route(''));
