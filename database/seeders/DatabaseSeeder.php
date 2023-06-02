@@ -32,7 +32,6 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\Contact::factory(5)->create();
         \App\Models\Company::factory(5)->create();
-        \App\Models\Contact::factory(5)->create();
         \App\Models\Profesional::factory(5)->create();
         \App\Models\Document::factory(5)->create();
         \App\Models\Profile::factory(5)->create();

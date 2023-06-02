@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\DB;
 
 class CompanyFactory extends Factory
 {
@@ -19,6 +20,7 @@ class CompanyFactory extends Factory
 
         return [
             'name' => $this->faker->company(),
+            'id_contacts' => $this->faker->randomElement(DB::table('contacts')->pluck('id')),
             'bussName' => $this->faker->companySuffix(),
             'country' => $this->faker->country(),
             'location'=> $locate,
@@ -31,6 +33,7 @@ class CompanyFactory extends Factory
             'compSize' => $this->faker->randomElement(['micro -','pequeña','mediana','grande']),
             'telephone' => $this->faker->numerify('#######'),
             'email' => $this->faker->email(),
+            'webPage' => $this->faker->url()
         ];
     }
 }

@@ -15,11 +15,14 @@ class ContactFactory extends Factory
     public function definition()
     {
         return [
+            'docIdentity' => $this->faker->numerify('###########'),
             'name' => $this->faker->name(),
-            'telephone' => $this->faker->phoneNumber(),
+            'appointment' => $this->faker->jobTitle(),
+            'telephone' => $this->faker->numerify('#######'),
+            'cellular' => $this->faker->numerify('3#########'),
+            'telephone' => $this->faker->numerify('#######'),
             'email' => $this->faker->unique()->safeEmail(),
             'area' => $this->faker->jobTitle(),
-            'id_companies' => $this->faker->randomElement(DB::table('companies')->pluck('id')),
             
         ];
     }
