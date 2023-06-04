@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
-    
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
-        <!-- Spinner Start 
+        <!-- Spinner Start
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
@@ -49,13 +49,11 @@
                     <h3 class="text-primary"><i></i></h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
-                    
 
-                   
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="#" class="nav-item nav-link active" data-bs-toggle="tooltip" title="Home"><i class="fa-solid fa-house"></i></a>
-                    <a href="{{route('courses.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Cursos"><i class="fa-solid fa-graduation-cap"></i></a>   
+                    <a href="{{route('courses.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Cursos"><i class="fa-solid fa-graduation-cap"></i></a>
                     <a href="{{route('professionals.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Profesionales"><i class="fa-solid fa-user-tie"></i></a>
                     <a href="{{route('profiles.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Perfiles"><i class="fa-solid fa-address-book"></i></a>
                     <a href="{{route('users.index')}}" class="nav-item nav-link" data-bs-toggle="tooltip" title="Usuarios"><i class="fa-solid fa-door-open"></i></a>
@@ -105,11 +103,18 @@
             @yield('content')
 
 
-            <!-- Footer Start -->
-            <footer class="container-fluid pt-4 footer">
+            <!-- Footer Start
+            <nav class="bg-secondary container-fluid navbar navbar-expand-sm navbar-secondary fixed-bottom">
+                <div class="bg-secondary container-fluid">
+                    <div class="navbar-brand bg-secondary">
+                    <img src="{{asset('img/Logo1.png')}}" alt="">
+                    </div>
+                </div>
+            </nav>-->
+            <footer class="col-lg-12 col-md-11 mb-4 mb-md-0">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                        <div class="col-md-11 col-sm-6 text-center text-sm-start">
                             <img class="" src="{{asset('img/Logo1.png')}}" alt="">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         </div>

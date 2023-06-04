@@ -1,24 +1,16 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-sm-11 col-md-6">
-            <div class="mt-5">
-                <h2>Profesionales</h2><hr>
-                <div class="row mt-5">
-                    <div class="col-sm-2 text-dark p-0">
-                        <p class="ms-2 me-1">Ordernar por: </p>
-                    </div>
-                    <div class="col-sm-7 p-0">
-                        <select class="form-select bg-white">
-                            <option></option>
-                        </select>
-                    </div>
-                </div>
+    <div class="mt-5">
+        <h2 class="text-center text-danger mt-5">Profesionales</h2>
+        <div class="col-sm-12 col-md-11 ms-3 ">
+            <div class="col-md-3 mt-5">
+                <h4 class="">Ordernar por: </h4>
+                <select class="form-select bg-white">
+                    <option></option>
+                </select>
             </div>
-        </div>
-        <div class="row ad">
-            <div class="col-sm-113 col-md-6 add p-0">
+            <div class="text-end fs-2">
                 <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
             </div>
         </div>
@@ -35,7 +27,7 @@
                             <div class="p-4">
                                 <h3>Nombre</h3>
                                 <h5>Curso 1</h5>
-                                <a href="#">nombre@uniempresarial.edu.co</a>  
+                                <a href="#">nombre@uniempresarial.edu.co</a>
                             </div>
                             <div>
                                 <img class="rounded-circle" src="{{asset('img/User1.jpg')}}" alt="">
@@ -44,8 +36,8 @@
                         <hr class=".hr">
                     </div>
                 </div>
-        
-                
+
+
         </div>
     </div>
 </div>

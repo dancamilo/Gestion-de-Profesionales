@@ -1,39 +1,48 @@
 @extends('layouts.app')
 @section('content')
-<div class="d-flex w-100v mt-3">
-    <div class="create-card w-25 me-4 p-4">
-        <h3>Editar profesional</h3>
-        <hr width="80%">
-        <h4 class="pt-3">Información personal</h4>
-        <div class="d-flex mt-3">
-            <div class="img-card d-grid me-4">
+<div class="container">
+<div class="d-flex col-md-12 col-sm-12 mt-5 mb-5">
+    <div class="create-card col-md-4 mb-5">
+        <h4 class="pt-3 text-center">Información personal</h4>
+        <div class="text-center  d-flex me-5 ps-3">
+            <div class="img-card d-grid text-center me-4">
                 <img src="{{asset('img/Imagen.PNG')}}" alt="">
-                <div id="select-img">
-                    <input type="file" name="" id="select-img">
+                <div id="">
+                    <input type="file" name="" id="">
                 </div>
             </div>
-            <div class="">
-                  <input type="text" class="form-control mb-5" name="name" id="" aria-describedby="helpId" placeholder="Nombres">
-                  <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Apellidos">
+            <div class="col-md-9 mt-5">
+                  <input type="text" class="form-control mb-5" name="name" id="" aria-describedby="helpId" placeholder="Nombre">
             </div>
         </div>
-        <h4 class="pt-3">Documento de identidad</h4>
-        <div class="d-flex my-3">
-            <select class="w-25 me-2 text-center" name="" id="">
+        <div class="d-flex col-md-11 mt-3">
+            <div class="col-md-3 ps-3">
+            <select class="" name="" id="">
                 <option selected value="">C.C</option>
+                <option></option>
             </select>
-            <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Documento de identidad">
+            </div>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Documento de identidad">
+            </div>
         </div>
-        <hr width="80%">
-        <h4 class="pt-3">Información de contacto</h4>
-        <div class="d-flex my-3">
+        <h4 class="pt-3 text-center">Información de contacto</h4>
+        <div class="col-md-11 d-flex mt-3 ms-3 text-center">
+            <div class="col-md-6">
                 <input type="text" class="form-control me-2" name="lastname" id="" aria-describedby="helpId" placeholder="Teléfono fijo">
+            </div>
+                <div class="col-md-6 ms-1">
                 <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" placeholder="Número de celular">
+            </div>
         </div>
-        <input type="email" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Correo personal">
+            <div class="col-md-11 ms-3">
+                <input type="email" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Correo personal">
+            </div>
+            <div class="col-md-11 ms-3">
         <input type="email" class="form-control my-3" name="lastname" id="" aria-describedby="helpId" placeholder="Correo profesional">
+            </div>
     </div>
-    <div class="w-25 me-2 p-4 align-items-center justify-content-center text-left">
+    <div class="create-card col-md-4 mb-5">
         <h4 class="">Información académica</h4>
         <div class="d-flex my-3">
                   <input type="text" class="form-control w-50 me-2" name="name" id="" aria-describedby="helpId" placeholder="Título">
@@ -80,7 +89,7 @@
             <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Añadir</a>
         </div>
     </div>
-    <div class="create-card w-25 me-4 p-4">
+    <div class="create-card col-md-4 mb-5">
         <h4>Rol a desempeñar</h4>
         <select class="w-100 ps-2 py-2 me-2 text-left" name="" id="">
             <option selected value="">Área especializada</option>
@@ -140,5 +149,6 @@
             <a name="" id="" class=" px-5 btn btn-primary" href="#" role="button">Continuar</a>
         </div>
     </div>
+</div>
 </div>
 @endsection

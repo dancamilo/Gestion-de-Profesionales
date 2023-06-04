@@ -14,15 +14,15 @@
             <a href="#" class=""><i class="fa-solid fa-user-plus"></i></a>
         </div>
  </div>
-    </div> 
+    </div>
 
-<div class="d-flex mt-5 col-sm-12 col-md-11 ms-3  mx-3">
-    <div class="collapsible-div position-relative text-dark col-md-5 rounded-2 border border-segundary shadow-lg p-3 mx-3">
-        <div class="p-4">
+<div class="d-flex mt-5 col-sm-12 col-md-11 ms-3 mx-3">
+    <div class="collapsible-div position-relative text-dark col-md-3 rounded-2 border border-segundary shadow-lg p-3 mx-3">
+        <div class="">
             <h3>Nombre</h3>
             <h5>Cargo</h5>
-            <a href="#">nombre@uniempresarial.edu.co</a> 
+            <a href="#">nombre@uniempresarial.edu.co</a>
 </div>
-</div>  
-</div>     
-@endsection 
+</div>
+</div>
+@endsection
