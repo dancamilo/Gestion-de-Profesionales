@@ -106,8 +106,8 @@ class CompanyController extends Controller
         {
             $company = Company::find($id);
             $contact = Contact::find($id);
-            $course = Course::all();
-            return view('users.emp_show', compact('company', 'contact'),['courses' => $course]);
+            $courses = Course::where('id_companies', $company->id)->get();
+            return view('users.emp_show', compact('company', 'contact','courses'));
         }
     }
 
