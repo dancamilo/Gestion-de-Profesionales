@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -17,7 +18,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('users.user_index');
+        $user = User::all();
+        return view('users.user_index', compact('user'));
     }
 
     /**
@@ -27,7 +29,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $user = User::all();
+        return view('users.user_index', compact('user'));
     }
 
     /**
@@ -38,7 +41,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        $user->name=$request->name;
+        $user->id_rols=$request->id_rols;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->save();
+        return redirect(route('users.index'));
+
     }
 
     /**
@@ -72,7 +82,13 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find();
+        $user->name=$request->name;
+        $user->id_rols=$request->id_rols;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->save();
+        return redirect(route('users.index', $id));
     }
 
     /**
