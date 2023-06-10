@@ -24,7 +24,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 Route::get('/prueba', function () {
-    return view('users.prof_index');
+    return view('users.emp_edit');
 });
 Auth::routes();
 
